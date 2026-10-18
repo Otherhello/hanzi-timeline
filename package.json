@@ -1,0 +1,23 @@
+{
+  "name": "hanzi-timeline",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "汉字字形演变证据链时间轴（甲骨文→金文→战国→小篆→隶→楷）",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

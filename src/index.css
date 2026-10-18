@@ -1,0 +1,614 @@
+/* ==========================================================================
+   设计系统 —— 古风 · 简约（水墨 / 宣纸 / 印章 / 青铜）
+   原则：大量留白、细线勾勒、仿古而不堆砌、现代交互包裹古典内容。
+   ========================================================================== */
+
+:root {
+  /* —— 墨色系（文字） —— */
+  --ink: #23201a;         /* 主墨色 */
+  --ink-soft: #4a443a;    /* 次墨色 */
+  --ink-faint: #968e7c;   /* 淡墨（弱化信息） */
+
+  /* —— 宣纸系（背景与面） —— */
+  --paper: #f6f1e6;       /* 页面底 —— 宣纸暖白 */
+  --paper-deep: #efe7d6;  /* 卡片底 —— 略深一分的旧纸 */
+  --paper-light: #fbf8f1; /* 浮起面 */
+  --paper-vein: rgba(163, 135, 79, 0.05); /* 纸纹 */
+
+  /* —— 印泥红（点睛） —— */
+  --seal: #a63a2b;
+  --seal-deep: #86291d;
+
+  /* —— 青铜金（时间轴、框线、出处） —— */
+  --bronze: #a3874f;
+  --bronze-soft: #b7a06a;
+
+  /* —— 线 —— */
+  --line: #ddd3bf;        /* 细线 */
+  --line-strong: #c6b897; /* 稍强线 */
+
+  /* —— 状态色 —— */
+  --verified: var(--seal);   /* 已核对：印章红 */
+  --uncertain: #b3863a;      /* 存疑：青铜金 */
+  --pending: #958d7d;        /* 待核对：淡墨灰 */
+
+  /* —— 字体栈 —— */
+  --font-serif: "Songti SC", "STZhongsong", "华文中宋", "SimSun", "Noto Serif SC", serif;
+  --font-kai: "Kaiti SC", "STKaiti", "KaiTi", "楷体", "DFKai-SB", serif;
+  --font-sans: "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+
+  /* —— 尺度 —— */
+  --gutter: clamp(18px, 4vw, 40px);
+  --col-max: 920px;
+  --radius: 6px;
+  --shadow-card: 0 1px 2px rgba(35, 32, 26, 0.04), 0 4px 14px rgba(35, 32, 26, 0.05);
+  --shadow-float: 0 6px 20px rgba(35, 32, 26, 0.10);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(120% 90% at 50% 0%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 60%),
+    linear-gradient(var(--paper-vein) 1px, transparent 1px),
+    linear-gradient(90deg, var(--paper-vein) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px, 28px 28px;
+  background-attachment: fixed;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 500; margin: 0; }
+p { margin: 0; }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+input {
+  font-family: inherit;
+  color: inherit;
+}
+
+::selection { background: rgba(166, 58, 43, 0.16); }
+
+/* ==========================================================================
+   布局骨架
+   ========================================================================== */
+
+.app {
+  max-width: var(--col-max);
+  margin: 0 auto;
+  padding: var(--gutter);
+  padding-bottom: calc(var(--gutter) * 2.6);
+}
+
+/* ==========================================================================
+   页眉
+   ========================================================================== */
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 30px 4px 26px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 28px;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.header .kicker {
+  font-size: 12px;
+  letter-spacing: 0.42em;
+  color: var(--bronze);
+  margin-bottom: 10px;
+  font-family: var(--font-serif);
+}
+
+.header h1 {
+  font-size: clamp(26px, 4.6vw, 38px);
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.header .subtitle {
+  margin-top: 12px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  max-width: 60ch;
+}
+
+.seal {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  background: var(--seal);
+  color: #f7e9d8;
+  font-family: var(--font-serif);
+  font-size: 26px;
+  border-radius: 4px;
+  box-shadow:
+    inset 0 0 0 3px rgba(255, 255, 255, 0.12),
+    inset -2px -2px 0 rgba(0, 0, 0, 0.16),
+    0 1px 2px rgba(35, 32, 26, 0.18);
+  letter-spacing: 0;
+  user-select: none;
+}
+/* 印章边缘做轻微「朱文」残破感 */
+.seal::after {
+  display: none;
+}
+
+/* ==========================================================================
+   检索区（单字输入）
+   ========================================================================== */
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.searchbox {
+  position: relative;
+  width: 86px;
+  height: 86px;
+}
+
+.searchbox input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: var(--font-kai);
+  font-size: 48px;
+  color: var(--ink);
+  background: var(--paper-light);
+  border: 1.5px solid var(--line-strong);
+  border-radius: var(--radius);
+  transition: border-color .16s ease, box-shadow .16s ease, background .16s ease;
+  outline: none;
+}
+.searchbox input:hover { border-color: var(--bronze); }
+.searchbox input:focus {
+  border-color: var(--bronze);
+  box-shadow: 0 0 0 3px rgba(163, 135, 79, 0.16);
+  background: #fffdf6;
+}
+
+.searchbox .fieldu {
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  font-size: 10px;
+  color: var(--ink-faint);
+  font-family: var(--font-serif);
+}
+
+.search-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn {
+  padding: 10px 22px;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  background: var(--paper-light);
+  transition: all .16s ease;
+  font-family: var(--font-serif);
+}
+.btn:hover {
+  border-color: var(--bronze);
+  color: var(--seal-deep);
+  box-shadow: var(--shadow-card);
+}
+.btn--primary {
+  background: var(--seal);
+  border-color: var(--seal);
+  color: #f7e9d8;
+}
+.btn--primary:hover {
+  background: var(--seal-deep);
+  border-color: var(--seal-deep);
+  color: #fff;
+}
+.btn--ghost {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--ink-faint);
+}
+.btn--ghost:hover { color: var(--ink); }
+
+.chips {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--ink-faint);
+}
+.chip {
+  padding: 3px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  background: var(--paper-light);
+  transition: all .15s ease;
+}
+.chip:hover { border-color: var(--bronze); color: var(--seal-deep); }
+
+.hint {
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+}
+.hint b { color: var(--ink-soft); font-weight: 500; }
+
+/* ==========================================================================
+   数据源 / 状态条
+   ========================================================================== */
+
+.sourcebar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0 6px;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.sourcebar .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--pending);
+  flex: none;
+}
+.sourcebar .dot--live { background: var(--verified); }
+.sourcebar .tag {
+  padding: 2px 10px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 3px;
+  color: var(--ink-faint);
+  font-family: var(--font-serif);
+  letter-spacing: 0.08em;
+}
+
+/* ==========================================================================
+   时间轴
+   ========================================================================== */
+
+.timeline {
+  position: relative;
+  margin-top: 26px;
+  padding-left: 0;
+}
+
+/* 左侧贯穿的时间主线 */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 39px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(183, 160, 106, 0.15), var(--bronze) 18%, var(--bronze) 82%, rgba(183, 160, 106, 0.15));
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 84px;
+  margin-bottom: 26px;
+}
+
+/* 轴上的节点圆点 */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 33px;
+  top: 34px;
+  width: 13px;
+  height: 13px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--bronze);
+}
+.timeline-item--gap::before {
+  border-style: dashed;
+  border-color: var(--ink-faint);
+  background: var(--paper-deep);
+}
+
+/* ==========================================================================
+   时代卡片
+   ========================================================================== */
+
+.era-card {
+  background: var(--paper-deep);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: box-shadow .18s ease, border-color .18s ease;
+}
+.era-card:hover {
+  box-shadow: var(--shadow-float);
+  border-color: var(--line-strong);
+}
+
+.era-card__head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-light);
+}
+
+/* 竖排时代名 —— 古风点睛 */
+.era-label {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  letter-spacing: 0.18em;
+  color: var(--ink);
+  padding: 4px 6px;
+  border-right: 1px solid var(--line-strong);
+  user-select: none;
+}
+
+.era-meta {
+  flex: 1;
+  min-width: 0;
+}
+.era-meta__name {
+  font-size: 15.5px;
+  font-family: var(--font-serif);
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+.era-meta__period {
+  font-size: 12px;
+  color: var(--ink-faint);
+  margin-top: 2px;
+}
+.era-meta__carrier {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 11.5px;
+  color: var(--bronze);
+  letter-spacing: 0.04em;
+}
+.era-meta__carrier::before { content: "载体 · "; color: var(--ink-faint); }
+
+.era-count {
+  font-size: 12px;
+  color: var(--ink-faint);
+  font-family: var(--font-serif);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   字形主体
+   ========================================================================== */
+
+.glyph-stage {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding: 0;
+}
+
+.glyph-view {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 168px;
+  padding: 18px;
+  background:
+    radial-gradient(80% 80% at 50% 45%, rgba(251, 248, 241, 0.9), rgba(239, 231, 214, 0) 72%),
+    var(--paper-deep);
+}
+
+.glyph-view img {
+  max-width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  filter: contrast(0.98);
+}
+
+/* 实物空帧占位：绝不伪造字形 */
+.glyph-ph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 26px 16px;
+  border: 1.5px dashed var(--line-strong);
+  border-radius: var(--radius);
+  color: var(--ink-faint);
+  text-align: center;
+  background: rgba(251, 248, 241, 0.5);
+}
+.glyph-ph .ph-mark {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  color: var(--ink-faint);
+}
+.glyph-ph .ph-sub {
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+}
+.glyph-ph .ph-note {
+  font-size: 11px;
+  color: var(--ink-faint);
+  opacity: 0.85;
+  max-width: 46ch;
+}
+
+/* 同一时代内的多条实例彼此分隔 */
+.occurrence + .occurrence {
+  border-top: 1px solid var(--line-strong);
+}
+
+/* 出处 / 证据信息 */
+.provenance {
+  padding: 14px 20px 16px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.provenance__row {
+  display: flex;
+  gap: 10px;
+  padding: 3px 0;
+}
+.provenance__row dt {
+  flex: none;
+  width: 56px;
+  color: var(--ink-faint);
+  font-family: var(--font-serif);
+  letter-spacing: 0.05em;
+}
+.provenance__row dd {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+.provenance__row dd em {
+  font-style: normal;
+  color: var(--ink);
+}
+.provenance .artifact {
+  font-size: 14px;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   核对状态徽章（印章样式）
+   ========================================================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 10px;
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  border-radius: 3px;
+  font-family: var(--font-serif);
+  white-space: nowrap;
+}
+.badge--verified {
+  color: var(--verified);
+  border: 1px solid var(--verified);
+  box-shadow: inset 0 0 0 1px rgba(166, 58, 43, 0.12);
+}
+.badge--uncertain { color: var(--uncertain); border: 1px solid var(--uncertain); }
+.badge--pending { color: var(--pending); border: 1px dashed var(--pending); }
+.badge .badge-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+
+/* ==========================================================================
+   缺环占位
+   ========================================================================== */
+
+.gap-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 20px;
+  color: var(--ink-soft);
+  background:
+    linear-gradient(135deg, rgba(163, 135, 79, 0.05), transparent 60%),
+    var(--paper-light);
+}
+.gap-mark {
+  flex: none;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--ink-faint);
+  border: 1.5px dashed var(--ink-faint);
+  border-radius: 50%;
+  letter-spacing: 0.05em;
+}
+.gap-text .gap-title {
+  font-family: var(--font-serif);
+  font-size: 14.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+.gap-text .gap-note {
+  margin-top: 3px;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  max-width: 62ch;
+}
+
+/* ==========================================================================
+   结论 / 脚注
+   ========================================================================== */
+
+.legend {
+  margin-top: 34px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper-light);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.legend h4 {
+  font-size: 13.5px;
+  letter-spacing: 0.1em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.legend ul { margin: 0; padding-left: 1.2em; }
+.legend li { margin: 3px 0; }
+
+.loading, .empty, .error {
+  margin-top: 26px;
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--ink-faint);
+  font-family: var(--font-serif);
+  letter-spacing: 0.06em;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius);
+  background: rgba(251, 248, 241, 0.55);
+}
+.error { color: var(--seal-deep); border-color: rgba(166, 58, 43, 0.4); }

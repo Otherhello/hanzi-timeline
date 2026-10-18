@@ -1,0 +1,26 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+dist-ssr/
+
+# 日志
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# 编辑器
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 预抓取缓存（可选：抓取脚本的中间产物，若想追踪再手动去掉）
+*.tmp
+.scrape-cache/
