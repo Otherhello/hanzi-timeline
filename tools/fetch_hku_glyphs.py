@@ -108,6 +108,9 @@ def pick_for_era(era: str, tables) -> list[str]:
                 for e in t['entries']:
                     if '籀文' in e['tip']:
                         picks.append(e['src']); break
+        elif era == '小篆':
+            if t['era'] == '小篆':
+                picks += [e['src'] for e in t['entries']][:1]
         elif era == '戰國金文':
             if t['era'] == '金文':
                 picks += [e['src'] for e in t['entries'] if '戰國' in e['tip']][:1]
@@ -140,6 +143,7 @@ def download(word: str) -> dict:
         'jinwen': pick_for_era('金文', tables),
         'zhanguo': pick_for_era('戰國金文', tables),
         'zhuanwen': pick_for_era('籀文', tables),
+        'xiaozhuan': pick_for_era('小篆', tables),
         'lishu': pick_for_era('简帛', tables),
     }
     for era, paths in era_srcs.items():

@@ -7,7 +7,8 @@ import CHARACTERS from '../data/characters'
  *
  * 数据构成：
  * - 小篆：维基文库《說文解字》（核对状态 = 已核对）
- * - 其他时代：著录出处已标明，核对状态 = 待核对
+ * - 甲骨／金文／战国／隶：香港中文大学《漢語多功能字庫》字形（已核对，附器号）
+ * - 其余时代：著录出处已标明，核对状态 = 待核对
  * - 缺环：某时代无实例时显式标注，绝不倒填。
  *
  * 繁体→简体映射：局限（仅内置几个演示字的映射）。
@@ -31,7 +32,7 @@ function resolve(char: string): string {
 }
 
 export const realSource: GlyphSource = {
-  name: '维基文库《說文解字》 + 待核著录',
+  name: '维基文库《說文解字》 · 香港中文大學《漢語多功能字庫》',
   mode: 'live',
   async fetch(char: string): Promise<CharacterData> {
     const key = resolve(char)
