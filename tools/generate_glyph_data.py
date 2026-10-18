@@ -85,10 +85,15 @@ def esc(s: str) -> str:
 
 
 def seal_image_for(char: str) -> str | None:
-    """若 public/glyphs/ 存在 {char}-seal.svg，返回其相对路径 '/glyphs/…'，否则 None。"""
+    """若 public/glyphs/ 存在 {char}-seal.svg，返回相对路径 'glyphs/…'（不加前导斜杠），否则 None。
+
+    用相对路径（无前导斜杠）而非 '/glyphs/…'：站点部署在 GitHub Pages 项目子路径
+    （如 /hanzi-timeline/）时，前导斜杠会解析到域名根而 404；相对路径相对当前文档解析，
+    dev（/）与 Pages（/repo/）皆正确。
+    """
     fname = f'{char}-seal.svg'
     if os.path.exists(os.path.join(GLYPHS_DIR, fname)):
-        return f'/glyphs/{fname}'
+        return f'glyphs/{fname}'
     return None
 
 
