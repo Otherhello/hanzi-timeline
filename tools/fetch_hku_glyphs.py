@@ -153,7 +153,7 @@ def download(word: str) -> dict:
                     f.write(data)
                 tip = tip_for(path, tables)
                 saved.append({
-                    'imageSrc': f'/glyphs/{fname}',
+                    'imageSrc': f'glyphs/{fname}',
                     'provenance': tip,
                     'bytes': len(data),
                 })
