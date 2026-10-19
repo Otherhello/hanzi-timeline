@@ -345,5 +345,824 @@
         "bytes": 1948
       }
     ]
+  },
+  "木": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/木-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:1402)",
+        "bytes": 1721
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/木-jinwen-1.jpg",
+        "provenance": "木父辛卣[商代](CHANT:5166)",
+        "bytes": 2024
+      },
+      {
+        "imageSrc": "glyphs/木-jinwen-2.jpg",
+        "provenance": "曶鼎[西周中期](CHANT:2838)",
+        "bytes": 1993
+      }
+    ],
+    "zhanguo": [],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/木-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1754
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/木-lishu-1.jpg",
+        "provenance": "馬王堆．陰陽十一脈灸經甲本．45",
+        "bytes": 1657
+      }
+    ]
+  },
+  "土": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/土-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:1211)",
+        "bytes": 1846
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/土-jinwen-1.jpg",
+        "provenance": "大盂鼎[西周早期](CHANT:2837)",
+        "bytes": 1806
+      },
+      {
+        "imageSrc": "glyphs/土-jinwen-2.jpg",
+        "provenance": "吳王孫無土鼎[春秋晚期](CHANT:2359)",
+        "bytes": 1720
+      }
+    ],
+    "zhanguo": [
+      {
+        "imageSrc": "glyphs/土-zhanguo-1.jpg",
+        "provenance": "哀成弔鼎[戰國](CHANT:2782)",
+        "bytes": 2097
+      }
+    ],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/土-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1497
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/土-lishu-1.jpg",
+        "provenance": "馬王堆．五十二病方．115",
+        "bytes": 1538
+      }
+    ]
+  },
+  "田": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/田-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:2189)",
+        "bytes": 2239
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/田-jinwen-1.jpg",
+        "provenance": "二祀其卣[商代](CHANT:5412)",
+        "bytes": 2687
+      },
+      {
+        "imageSrc": "glyphs/田-jinwen-2.jpg",
+        "provenance": "田告罍[西周早期](CHANT:9777)",
+        "bytes": 2543
+      }
+    ],
+    "zhanguo": [],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/田-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1760
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/田-lishu-1.jpg",
+        "provenance": "馬王堆．雜療方．66",
+        "bytes": 1724
+      }
+    ]
+  },
+  "雨": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/雨-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:1180)",
+        "bytes": 1707
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/雨-jinwen-1.jpg",
+        "provenance": "子雨己鼎[商代](CHANT:1717)",
+        "bytes": 2736
+      },
+      {
+        "imageSrc": "glyphs/雨-jinwen-2.jpg",
+        "provenance": "雨乍父乙爵[西周早期](CHANT:8879)",
+        "bytes": 2964
+      }
+    ],
+    "zhanguo": [
+      {
+        "imageSrc": "glyphs/雨-zhanguo-1.jpg",
+        "provenance": "壺[戰國晚期](CHANT:9734)",
+        "bytes": 2588
+      }
+    ],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/雨-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1628
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/雨-lishu-1.jpg",
+        "provenance": "馬王堆．老子甲本．138",
+        "bytes": 1757
+      }
+    ]
+  },
+  "魚": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/魚-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:1812)",
+        "bytes": 2417
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/魚-jinwen-1.jpg",
+        "provenance": "戍嗣子鼎（戍嗣子鼎）[商代](CHANT:2708)",
+        "bytes": 2735
+      },
+      {
+        "imageSrc": "glyphs/魚-jinwen-2.jpg",
+        "provenance": "犀白魚父鼎[西周](CHANT:2534)",
+        "bytes": 2493
+      },
+      {
+        "imageSrc": "glyphs/魚-jinwen-3.jpg",
+        "provenance": "冶妊鼎[春秋早期](CHANT:2526)",
+        "bytes": 2202
+      }
+    ],
+    "zhanguo": [
+      {
+        "imageSrc": "glyphs/魚-zhanguo-1.jpg",
+        "provenance": "魚鼎匕[戰國](CHANT:980)",
+        "bytes": 2700
+      }
+    ],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/魚-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1822
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/魚-lishu-1.jpg",
+        "provenance": "馬王堆．陰陽十一脈灸經甲本．54",
+        "bytes": 1612
+      }
+    ]
+  },
+  "鳥": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/鳥-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:1736)",
+        "bytes": 1719
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/鳥-jinwen-1.jpg",
+        "provenance": "鳥形銘鼎[商代](CHANT:1120)",
+        "bytes": 2630
+      },
+      {
+        "imageSrc": "glyphs/鳥-jinwen-2.jpg",
+        "provenance": "鳥形銘[西周早期](CHANT:2979)",
+        "bytes": 2200
+      },
+      {
+        "imageSrc": "glyphs/鳥-jinwen-3.jpg",
+        "provenance": "子之弄鳥尊[春秋晚期](CHANT:5761)",
+        "bytes": 1845
+      }
+    ],
+    "zhanguo": [],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/鳥-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1533
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/鳥-lishu-1.jpg",
+        "provenance": "馬王堆．五十二病方．126",
+        "bytes": 1794
+      }
+    ]
+  },
+  "犬": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/犬-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:1585)",
+        "bytes": 1858
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/犬-jinwen-1.jpg",
+        "provenance": "犬父乙爵[商代](CHANT:8867)",
+        "bytes": 2285
+      },
+      {
+        "imageSrc": "glyphs/犬-jinwen-2.jpg",
+        "provenance": "史犬觶[西周早期](CHANT:6168)",
+        "bytes": 2102
+      }
+    ],
+    "zhanguo": [],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/犬-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1422
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/犬-lishu-1.jpg",
+        "provenance": "馬王堆．五十二病方．112",
+        "bytes": 1766
+      }
+    ]
+  },
+  "門": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/門-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:2167)",
+        "bytes": 2123
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/門-jinwen-1.jpg",
+        "provenance": "父丙南門鼎[商代或西周早期](CHANT:1567)",
+        "bytes": 2530
+      }
+    ],
+    "zhanguo": [],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/門-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1664
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/門-lishu-1.jpg",
+        "provenance": "馬王堆．五十二病方．442",
+        "bytes": 1639
+      }
+    ]
+  },
+  "貝": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/貝-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:1915)",
+        "bytes": 2392
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/貝-jinwen-1.jpg",
+        "provenance": "宰甫卣[商代](CHANT:5395)",
+        "bytes": 2233
+      },
+      {
+        "imageSrc": "glyphs/貝-jinwen-2.jpg",
+        "provenance": "庚嬴鼎[西周早期](CHANT:2748)",
+        "bytes": 2488
+      }
+    ],
+    "zhanguo": [],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/貝-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1527
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/貝-lishu-1.jpg",
+        "provenance": "睡虎地秦簡．為吏之道．18-2",
+        "bytes": 1829
+      }
+    ]
+  },
+  "玉": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/玉-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:3253)",
+        "bytes": 1488
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/玉-jinwen-1.jpg",
+        "provenance": "亞□且丁[商代](CHANT:3940)",
+        "bytes": 2754
+      },
+      {
+        "imageSrc": "glyphs/玉-jinwen-2.jpg",
+        "provenance": "鮮盤（）[西周中期](CHANT:10166)",
+        "bytes": 2403
+      },
+      {
+        "imageSrc": "glyphs/玉-jinwen-3.jpg",
+        "provenance": "洹子孟姜壺[春秋](CHANT:9730)",
+        "bytes": 2674
+      }
+    ],
+    "zhanguo": [],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/玉-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1560
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/玉-lishu-1.jpg",
+        "provenance": "馬王堆．老子甲本．75",
+        "bytes": 1726
+      }
+    ]
+  },
+  "文": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/文-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:3236)",
+        "bytes": 1773
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/文-jinwen-1.jpg",
+        "provenance": "暊父丁文卣[商代](CHANT:5155)",
+        "bytes": 2444
+      },
+      {
+        "imageSrc": "glyphs/文-jinwen-2.jpg",
+        "provenance": "文鼎[商代或西周早期](CHANT:1015)",
+        "bytes": 2719
+      },
+      {
+        "imageSrc": "glyphs/文-jinwen-3.jpg",
+        "provenance": "秦公鐘 [春秋早期](CHANT:262)",
+        "bytes": 1748
+      }
+    ],
+    "zhanguo": [],
+    "zhuanwen": [],
+    "xiaozhuan": [],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/文-lishu-1.jpg",
+        "provenance": "馬王堆．十問．74",
+        "bytes": 1410
+      }
+    ]
+  },
+  "目": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/目-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:0601)",
+        "bytes": 1869
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/目-jinwen-1.jpg",
+        "provenance": "目子爵[商代](CHANT:8762)",
+        "bytes": 2065
+      },
+      {
+        "imageSrc": "glyphs/目-jinwen-2.jpg",
+        "provenance": "目爵[商代或西周早期](CHANT:7493)",
+        "bytes": 2531
+      },
+      {
+        "imageSrc": "glyphs/目-jinwen-3.jpg",
+        "provenance": "楚屈子赤角簠蓋[春秋晚期](CHANT:4612)",
+        "bytes": 2860
+      }
+    ],
+    "zhanguo": [
+      {
+        "imageSrc": "glyphs/目-zhanguo-1.jpg",
+        "provenance": "廿年寺工矛[戰國晚期](CHANT:11548)",
+        "bytes": 1711
+      }
+    ],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/目-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1714
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/目-lishu-1.jpg",
+        "provenance": "馬王堆．足臂十一脈灸經．6",
+        "bytes": 1952
+      }
+    ]
+  },
+  "耳": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/耳-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:0680)",
+        "bytes": 1679
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/耳-jinwen-1.jpg",
+        "provenance": "耳父乙鼎[商代](CHANT:2002)",
+        "bytes": 2398
+      },
+      {
+        "imageSrc": "glyphs/耳-jinwen-2.jpg",
+        "provenance": "亞耳且丁尊[西周早期](CHANT:5865)",
+        "bytes": 2103
+      }
+    ],
+    "zhanguo": [],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/耳-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1427
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/耳-lishu-1.jpg",
+        "provenance": "馬王堆．足臂十一脈灸經．6",
+        "bytes": 1702
+      }
+    ]
+  },
+  "口": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/口-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:0717)",
+        "bytes": 1606
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/口-jinwen-1.jpg",
+        "provenance": "口尊[商代](CHANT:5452)",
+        "bytes": 2767
+      },
+      {
+        "imageSrc": "glyphs/口-jinwen-2.jpg",
+        "provenance": "萬口鼎[商代或西周早期](CHANT:1133)",
+        "bytes": 2417
+      }
+    ],
+    "zhanguo": [],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/口-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1491
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/口-lishu-1.jpg",
+        "provenance": "馬王堆．足臂十一脈灸經．10",
+        "bytes": 1747
+      }
+    ]
+  },
+  "心": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/心-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:1934)",
+        "bytes": 2165
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/心-jinwen-1.jpg",
+        "provenance": "史牆盤[西周中期](CHANT:10175)",
+        "bytes": 2137
+      },
+      {
+        "imageSrc": "glyphs/心-jinwen-2.jpg",
+        "provenance": "王孫遺者鐘[春秋晚期](CHANT:261)",
+        "bytes": 2300
+      }
+    ],
+    "zhanguo": [
+      {
+        "imageSrc": "glyphs/心-zhanguo-1.jpg",
+        "provenance": "中山王方壺[戰國早期](CHANT:9735)",
+        "bytes": 2822
+      }
+    ],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/心-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1484
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/心-lishu-1.jpg",
+        "provenance": "馬王堆．養生方．144",
+        "bytes": 1794
+      }
+    ]
+  },
+  "大": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/大-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:0197)",
+        "bytes": 1683
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/大-jinwen-1.jpg",
+        "provenance": "大丏[商代](CHANT:3457)",
+        "bytes": 2070
+      },
+      {
+        "imageSrc": "glyphs/大-jinwen-2.jpg",
+        "provenance": "大盂鼎[西周早期](CHANT:2837)",
+        "bytes": 1978
+      },
+      {
+        "imageSrc": "glyphs/大-jinwen-3.jpg",
+        "provenance": "蔡缶[春秋晚期](CHANT:10004)",
+        "bytes": 1431
+      }
+    ],
+    "zhanguo": [
+      {
+        "imageSrc": "glyphs/大-zhanguo-1.jpg",
+        "provenance": "噩君舟節[戰國](CHANT:12113)",
+        "bytes": 1664
+      }
+    ],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/大-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1733
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/大-lishu-1.jpg",
+        "provenance": "睡虎地秦簡．秦律十八種．129",
+        "bytes": 1976
+      }
+    ]
+  },
+  "王": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/王-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:3246)",
+        "bytes": 1714
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/王-jinwen-1.jpg",
+        "provenance": "宰角[商代](CHANT:9105)",
+        "bytes": 1974
+      },
+      {
+        "imageSrc": "glyphs/王-jinwen-2.jpg",
+        "provenance": "子黃尊[商代或西周早期](CHANT:6000)",
+        "bytes": 2307
+      }
+    ],
+    "zhanguo": [
+      {
+        "imageSrc": "glyphs/王-zhanguo-1.jpg",
+        "provenance": "王三年馬雍令戈[戰國](CHANT:11375)",
+        "bytes": 1582
+      }
+    ],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/王-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1446
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/王-lishu-1.jpg",
+        "provenance": "馬王堆．老子甲本．144",
+        "bytes": 1840
+      }
+    ]
+  },
+  "車": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/車-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:3145)",
+        "bytes": 2192
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/車-jinwen-1.jpg",
+        "provenance": "車戈[商代](CHANT:10866)",
+        "bytes": 3106
+      },
+      {
+        "imageSrc": "glyphs/車-jinwen-2.jpg",
+        "provenance": "方鼎[西周早期](CHANT:2612)",
+        "bytes": 3085
+      }
+    ],
+    "zhanguo": [
+      {
+        "imageSrc": "glyphs/車-zhanguo-1.jpg",
+        "provenance": "噩君車節[戰國](CHANT:12110)",
+        "bytes": 1949
+      }
+    ],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/車-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1502
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/車-lishu-1.jpg",
+        "provenance": "馬王堆．五十二病方．403",
+        "bytes": 1667
+      }
+    ]
+  },
+  "石": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/石-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:2251)",
+        "bytes": 1389
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/石-jinwen-1.jpg",
+        "provenance": "己貉子蓋[西周中期](CHANT:3977)",
+        "bytes": 2467
+      },
+      {
+        "imageSrc": "glyphs/石-jinwen-2.jpg",
+        "provenance": "鐘白侵鼎[春秋](CHANT:2668)",
+        "bytes": 2946
+      }
+    ],
+    "zhanguo": [
+      {
+        "imageSrc": "glyphs/石-zhanguo-1.jpg",
+        "provenance": "高奴禾石權[戰國](CHANT:10384)",
+        "bytes": 2975
+      }
+    ],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/石-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1572
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/石-lishu-1.jpg",
+        "provenance": "馬王堆．老子乙本卷前古佚書．43",
+        "bytes": 1606
+      }
+    ]
+  },
+  "羊": {
+    "jiaguwen": [
+      {
+        "imageSrc": "glyphs/羊-jiaguwen-1.jpg",
+        "provenance": "甲骨文合集(CHANT:1270)",
+        "bytes": 1826
+      }
+    ],
+    "jinwen": [
+      {
+        "imageSrc": "glyphs/羊-jinwen-1.jpg",
+        "provenance": "羊鼎[商代](CHANT:1463)",
+        "bytes": 2522
+      },
+      {
+        "imageSrc": "glyphs/羊-jinwen-2.jpg",
+        "provenance": "羊父庚鼎[商代或西周早期](CHANT:1627)",
+        "bytes": 2218
+      }
+    ],
+    "zhanguo": [
+      {
+        "imageSrc": "glyphs/羊-zhanguo-1.jpg",
+        "provenance": "噩君舟節[戰國](CHANT:12113)",
+        "bytes": 1766
+      }
+    ],
+    "zhuanwen": [],
+    "xiaozhuan": [
+      {
+        "imageSrc": "glyphs/羊-xiaozhuan-1.jpg",
+        "provenance": "小篆(康熙圖)",
+        "bytes": 1541
+      }
+    ],
+    "lishu": [
+      {
+        "imageSrc": "glyphs/羊-lishu-1.jpg",
+        "provenance": "馬王堆．老子乙本卷前古佚書．134",
+        "bytes": 1668
+      }
+    ]
   }
 }

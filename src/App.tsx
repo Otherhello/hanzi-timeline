@@ -39,7 +39,7 @@ export default function App() {
       <div className="sourcebar">
         <span className="dot dot--live" />
         数据源：{realSource.name}
-        <span className="tag">六期皆有实物字形 · 附出处</span>
+        <span className="tag">逐期挂实物出处 · 缺环留白不虚填</span>
       </div>
 
       {loading && <div className="loading">正 在 寻 检 ……</div>}

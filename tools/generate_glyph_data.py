@@ -48,10 +48,27 @@ CALLIGRAPHER_DYNASTY = {
 
 ERA_ORDER = ['jiaguwen', 'jinwen', 'zhanguo', 'xiaozhuan', 'lishu', 'kaishu']
 
+# 主字表（展示顺序）。未列入 PROVENANCE 的字，各期出处一律取自字形库；
+# 字形库无该期实例时才记缺环，并使用 GAP_NOTES_DEFAULT 的中性说明。
+CHARS = [
+    '馬', '牛', '山', '水', '日', '月', '人', '紙',
+    '木', '土', '田', '雨', '魚', '鳥', '犬', '門',
+    '貝', '玉', '文', '目', '耳', '口', '心', '大',
+    '王', '車', '石', '羊',
+]
+
 GAP_NOTES = {
     'jiaguwen': '此字後起，商代甲骨文中未见。',
     'jinwen': '西周至春秋金文中未见此字。',
     'zhanguo': '战国文字资料中暂未发现此字实例，属缺环。',
+}
+
+# 未人工逐条审校的字，缺环一律用中性说法：只断言「本项目所校字库」没有，
+# 不断言该时代一定不存在此字。
+GAP_NOTES_DEFAULT = {
+    'jiaguwen': '本项目所校《漢語多功能字庫》未收此字甲骨字形，暂记缺环（待补）。',
+    'jinwen': '本项目所校《漢語多功能字庫》未收此字金文字形，暂记缺环（待补）。',
+    'zhanguo': '本项目所校字库未收此字战国字形（该库战国材料仅少量金文），暂记缺环（待补）。',
 }
 
 # ── 人手审校的出处计划 ──────────────────────────────────────────
@@ -114,15 +131,18 @@ def esc(s: str) -> str:
 
 
 def seal_image_for(char: str) -> str | None:
-    """若 public/glyphs/ 存在 {char}-seal.svg，返回相对路径 'glyphs/…'（不加前导斜杠），否则 None。
+    """若 public/glyphs/ 存在 {char}-seal.svg 或 {char}-seal.png，返回相对路径 'glyphs/…'。
 
     用相对路径（无前导斜杠）而非 '/glyphs/…'：站点部署在 GitHub Pages 项目子路径
     （如 /hanzi-timeline/）时，前导斜杠会解析到域名根而 404；相对路径相对当前文档解析，
     dev（/）与 Pages（/repo/）皆正确。
+
+    优先原 SVG（矢量）；Wikimedia 对原始文件的批量请求会 429，退回 500px PNG 缩略图。
     """
-    fname = f'{char}-seal.svg'
-    if os.path.exists(os.path.join(GLYPHS_DIR, fname)):
-        return f'glyphs/{fname}'
+    for ext in ('svg', 'png'):
+        fname = f'{char}-seal.{ext}'
+        if os.path.exists(os.path.join(GLYPHS_DIR, fname)):
+            return f'glyphs/{fname}'
     return None
 
 
@@ -232,10 +252,11 @@ def build_instance(era: str, char: str, prov: dict, shuowen: dict | None,
     return '{ ' + ', '.join(parts) + ' }'
 
 
-def build_era_entry(era: str, char: str, prov, shuowen: dict | None) -> str:
+def build_era_entry(era: str, char: str, prov, shuowen: dict | None,
+                    gap_note: str | None = None) -> str:
     """生成一条 EraEntry 对象字面量。"""
     if prov == 'gap':
-        gn = GAP_NOTES.get(era, '该时代暂未发现此字实例，属缺环。')
+        gn = gap_note or GAP_NOTES.get(era, '该时代暂未发现此字实例，属缺环。')
         return f"{{ era: '{era}', instances: [], isGap: true, gapNote: '{esc(gn)}' }}"
     inst = build_instance(era, char, prov, shuowen if era == 'xiaozhuan' else None)
     return f"{{ era: '{era}', instances: [{inst}], isGap: false }}"
@@ -273,7 +294,9 @@ def generate() -> str:
     out.append('const CHARACTERS: CharacterData[] = [')
     out.append('')
 
-    for char, prov in PROVENANCE.items():
+    for char in CHARS:
+        prov = PROVENANCE.get(char, {})
+        curated = char in PROVENANCE
         shuowen = index.get(char)
         char_hku = hku.get(char, {})
         char_kaishu = kaishu.get(char, [])
@@ -295,7 +318,8 @@ def generate() -> str:
                 insts = [build_hku_instance(era, char, e, i + 1) for i, e in enumerate(hku_entries)]
                 entries.append(f"{{ era: '{era}', instances: [{', '.join(insts)}], isGap: false }}")
             elif eprov is None or eprov == 'gap':
-                entries.append(build_era_entry(era, char, 'gap', None))
+                note = GAP_NOTES.get(era) if curated else GAP_NOTES_DEFAULT.get(era)
+                entries.append(build_era_entry(era, char, 'gap', None, gap_note=note))
             else:
                 entries.append(build_era_entry(era, char, eprov, None))
         out.append(f'  {{ char: \'{esc(char)}\', eras: [')
@@ -316,4 +340,4 @@ if __name__ == '__main__':
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         f.write(content)
     print(f"Generated: {OUT_PATH}")
-    print(f"Chars: {len(PROVENANCE)}")
+    print(f"Chars: {len(CHARS)}")

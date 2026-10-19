@@ -17,6 +17,11 @@ import CHARACTERS from '../data/characters'
 const SIMPLIFIED_TO_TRADITIONAL: Record<string, string> = {
   马: '馬',
   纸: '紙',
+  鱼: '魚',
+  鸟: '鳥',
+  门: '門',
+  贝: '貝',
+  车: '車',
 }
 
 const DB: Record<string, CharacterData> = {}
@@ -39,7 +44,10 @@ export const realSource: GlyphSource = {
     const key = resolve(char)
     const data = DB[key]
     if (!data) {
-      throw new Error(`暂未收录「${char}」的证据链数据。当前收录：馬、牛、山、水、日、月、人、紙。`)
+      throw new Error(
+        `暂未收录「${char}」的证据链数据（当前 ${Object.keys(DB).length} 字）。` +
+        `已收录：${Object.keys(DB).join('、')}`,
+      )
     }
     return data
   },
@@ -50,4 +58,4 @@ export const realSource: GlyphSource = {
 }
 
 /** 内置演示字（供示例 chips 使用） */
-export const SUGGESTED = ['马', '牛', '山', '水', '日', '月', '人', '纸']
+export const SUGGESTED = ['马', '牛', '山', '水', '日', '月', '木', '田', '鱼', '车', '門', '紙']

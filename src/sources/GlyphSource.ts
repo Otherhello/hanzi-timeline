@@ -4,8 +4,8 @@ import type { CharacterData } from '../types'
  * 数据源适配器接口。
  *
  * 这是整个项目「可替换性」的关键接缝：
- * - 现在用 mockSource（示例数据）跑通界面；
- * - 拿到数据库网址后，新增 liveSource 实现本接口（运行时抓取，或抓取后离线缓存），
+ * - 当前实现是 realSource：读取 tools/ 管线离线生成的 src/data/characters.ts；
+ * - 若日后接入运行时抓取的服务，只需另写一个实现本接口的 source，
  *   在 App 里改一行注入即可，其余组件零改动。
  */
 export interface GlyphSource {

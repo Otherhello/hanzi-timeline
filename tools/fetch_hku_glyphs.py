@@ -24,8 +24,13 @@ ROOT = os.path.join(HERE, '..')
 GLYPHS_DIR = os.path.join(ROOT, 'public', 'glyphs')
 MANIFEST_PATH = os.path.join(ROOT, 'data', 'hku_glyphs.json')
 
-# 8 个演示字（正体字头）
-CHARS = ['馬', '牛', '山', '水', '日', '月', '人', '紙']
+# 字头（正体）；扩充至 28 字
+CHARS = [
+    '馬', '牛', '山', '水', '日', '月', '人', '紙',
+    '木', '土', '田', '雨', '魚', '鳥', '犬', '門',
+    '貝', '玉', '文', '目', '耳', '口', '心', '大',
+    '王', '車', '石', '羊',
+]
 
 
 def fetch_page(word: str) -> str | None:
