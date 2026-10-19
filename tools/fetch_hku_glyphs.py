@@ -119,6 +119,16 @@ def pick_for_era(era: str, tables) -> list[str]:
         elif era == '戰國金文':
             if t['era'] == '金文':
                 picks += [e['src'] for e in t['entries'] if '戰國' in e['tip']][:1]
+        elif era == '戰國秦系':
+            # 战国文字分秦系与六国古文两系。该库「簡帛文字」中的睡虎地秦简，
+            # 简文书写年代多在战国晚期（墓葬在秦始皇三十年，前217），属秦系文字。
+            # 仅在同时存在馬王堆（用于「隶」期）时取用，避免两期重复同一件简。
+            if t['era'] == '簡帛文字':
+                has_mawangdui = any('馬王堆' in e['tip'] for e in t['entries'])
+                if has_mawangdui:
+                    for e in t['entries']:
+                        if '睡虎地' in e['tip']:
+                            picks.append(e['src']); break
     # 去重、保留顺序
     seen = set(); out = []
     for p in picks:
@@ -143,10 +153,13 @@ def download(word: str) -> dict:
     tables = parse_era_tables(html)
     meta = {}
     # 各时代源 path
+    zhanguo = pick_for_era('戰國金文', tables)
     era_srcs = {
         'jiaguwen': pick_for_era('甲骨', tables),
         'jinwen': pick_for_era('金文', tables),
-        'zhanguo': pick_for_era('戰國金文', tables),
+        'zhanguo': zhanguo,
+        # 无战国金文时，以睡虎地秦简（战国晚期秦系文字）补「战国」一期
+        'zhanguo_qin': [] if zhanguo else pick_for_era('戰國秦系', tables),
         'zhuanwen': pick_for_era('籀文', tables),
         'xiaozhuan': pick_for_era('小篆', tables),
         'lishu': pick_for_era('简帛', tables),
@@ -175,13 +188,21 @@ def download(word: str) -> dict:
 
 def main():
     os.makedirs(GLYPHS_DIR, exist_ok=True)
+    only = sys.argv[1:]
+    chars = only if only else CHARS
+
+    # 增量：--only 指定字时，在既有清单基础上合并，不覆盖其他字
     manifest = {}
-    for ch in CHARS:
+    if only and os.path.exists(MANIFEST_PATH):
+        with open(MANIFEST_PATH, encoding='utf-8') as f:
+            manifest = json.load(f)
+
+    for ch in chars:
         manifest[ch] = download(ch)
         print()
     with open(MANIFEST_PATH, 'w', encoding='utf-8') as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
-    print(f'Wrote {MANIFEST_PATH}')
+    print(f'Wrote {MANIFEST_PATH} ({len(manifest)} chars)')
 
 
 if __name__ == '__main__':

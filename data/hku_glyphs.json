@@ -367,6 +367,13 @@
       }
     ],
     "zhanguo": [],
+    "zhanguo_qin": [
+      {
+        "imageSrc": "glyphs/木-zhanguo_qin-1.jpg",
+        "provenance": "睡虎地秦簡．秦律十八種．10",
+        "bytes": 1997
+      }
+    ],
     "zhuanwen": [],
     "xiaozhuan": [
       {
@@ -447,6 +454,13 @@
       }
     ],
     "zhanguo": [],
+    "zhanguo_qin": [
+      {
+        "imageSrc": "glyphs/田-zhanguo_qin-1.jpg",
+        "provenance": "睡虎地秦簡．語書．4",
+        "bytes": 2207
+      }
+    ],
     "zhuanwen": [],
     "xiaozhuan": [
       {
@@ -580,6 +594,13 @@
       }
     ],
     "zhanguo": [],
+    "zhanguo_qin": [
+      {
+        "imageSrc": "glyphs/鳥-zhanguo_qin-1.jpg",
+        "provenance": "睡虎地秦簡．日書甲種．31背-2",
+        "bytes": 2182
+      }
+    ],
     "zhuanwen": [],
     "xiaozhuan": [
       {
@@ -617,6 +638,13 @@
       }
     ],
     "zhanguo": [],
+    "zhanguo_qin": [
+      {
+        "imageSrc": "glyphs/犬-zhanguo_qin-1.jpg",
+        "provenance": "睡虎地秦簡．秦律十八種．6",
+        "bytes": 1908
+      }
+    ],
     "zhuanwen": [],
     "xiaozhuan": [
       {
@@ -649,6 +677,13 @@
       }
     ],
     "zhanguo": [],
+    "zhanguo_qin": [
+      {
+        "imageSrc": "glyphs/門-zhanguo_qin-1.jpg",
+        "provenance": "睡虎地秦簡．秦律十八種．196",
+        "bytes": 1855
+      }
+    ],
     "zhuanwen": [],
     "xiaozhuan": [
       {
@@ -686,6 +721,7 @@
       }
     ],
     "zhanguo": [],
+    "zhanguo_qin": [],
     "zhuanwen": [],
     "xiaozhuan": [
       {
@@ -728,6 +764,13 @@
       }
     ],
     "zhanguo": [],
+    "zhanguo_qin": [
+      {
+        "imageSrc": "glyphs/玉-zhanguo_qin-1.jpg",
+        "provenance": "睡虎地秦簡．法律答問．140",
+        "bytes": 1997
+      }
+    ],
     "zhuanwen": [],
     "xiaozhuan": [
       {
@@ -770,6 +813,7 @@
       }
     ],
     "zhanguo": [],
+    "zhanguo_qin": [],
     "zhuanwen": [],
     "xiaozhuan": [],
     "lishu": [
@@ -849,6 +893,13 @@
       }
     ],
     "zhanguo": [],
+    "zhanguo_qin": [
+      {
+        "imageSrc": "glyphs/耳-zhanguo_qin-1.jpg",
+        "provenance": "睡虎地秦簡．效律．44",
+        "bytes": 1951
+      }
+    ],
     "zhuanwen": [],
     "xiaozhuan": [
       {
@@ -886,6 +937,13 @@
       }
     ],
     "zhanguo": [],
+    "zhanguo_qin": [
+      {
+        "imageSrc": "glyphs/口-zhanguo_qin-1.jpg",
+        "provenance": "睡虎地秦簡．語書．11",
+        "bytes": 1891
+      }
+    ],
     "zhuanwen": [],
     "xiaozhuan": [
       {

@@ -71,6 +71,15 @@ GAP_NOTES_DEFAULT = {
     'zhanguo': '本项目所校字库未收此字战国字形（该库战国材料仅少量金文），暂记缺环（待补）。',
 }
 
+# 个别字因「该时代本无此字」而缺环，须明说原因，不能写成「资料不足」。
+CHAR_GAP_NOTES = {
+    '紙': {
+        'jiaguwen': '「紙」為漢代後起字，商代甲骨文中不可能出現，故為缺環而非資料不足。',
+        'jinwen': '「紙」為漢代後起字，商周金文中不可能出現，故為缺環而非資料不足。',
+        'zhanguo': '「紙」為漢代後起字（造紙術約始於西漢），戰國文字中不可能出現，故為缺環而非資料不足。',
+    },
+}
+
 # ── 人手审校的出处计划 ──────────────────────────────────────────
 # 按「正体字头」收录（說文字头，如 馬、紙）。
 # 每时代取值：'gap' → 缺环；dict → 一条待核对实例。
@@ -167,24 +176,34 @@ def parse_hku_tip(tip: str):
 def build_hku_instance(era: str, char: str, entry: dict, n: int) -> str:
     """由《漢語多功能字庫》一条字形记录生成 GlyphInstance 对象字面量（含真图 + 实物出处）。"""
     artifact, period, catalog = parse_hku_tip(entry.get('provenance', ''))
+    # 睡虎地秦简：作为「战国」一期的秦系文字代表（简文多书于战国晚期）
+    is_qin = artifact.startswith('睡虎地')
     parts = [
         f"id: '{esc(char)}-{era}-{n}'",
         f"era: '{era}'",
         f"artifact: '{esc(artifact)}'",
     ]
-    if catalog:
-        if era == 'jiaguwen':
-            parts.append(f"catalogId: '{esc('CHANT:' + catalog)}'")
-        elif era in ('jinwen', 'zhanguo'):
-            parts.append(f"catalogId: '{esc('《殷周金文集成》' + catalog + '號')}'")
-        else:
-            parts.append(f"catalogId: '{esc('CHANT:' + catalog)}'")
-    parts.append(f"sourceRef: '{esc(HKU_SOURCE_REF.get(era, '香港中文大學《漢語多功能字庫》'))}'")
-    if period:
-        parts.append(f"dateRange: '{esc(period)}'")
+    if is_qin:
+        jian = artifact.split('．', 1)[1] if '．' in artifact else artifact
+        parts.append(f"catalogId: '{esc('睡虎地秦墓竹簡·' + jian)}'")
+        parts.append(f"sourceRef: '{esc('《睡虎地秦墓竹簡》（戰國晚期秦系文字，據香港中文大學《漢語多功能字庫》）')}'")
+        parts.append("dateRange: '戰國晚期·秦（秦系文字）'")
+    else:
+        if catalog:
+            if era == 'jiaguwen':
+                parts.append(f"catalogId: '{esc('CHANT:' + catalog)}'")
+            elif era in ('jinwen', 'zhanguo'):
+                parts.append(f"catalogId: '{esc('《殷周金文集成》' + catalog + '號')}'")
+            else:
+                parts.append(f"catalogId: '{esc('CHANT:' + catalog)}'")
+        parts.append(f"sourceRef: '{esc(HKU_SOURCE_REF.get(era, '香港中文大學《漢語多功能字庫》'))}'")
+        if period:
+            parts.append(f"dateRange: '{esc(period)}'")
     parts.append("verification: 'verified'")
     parts.append("verifier: '香港中文大學《漢語多功能字庫》'")
     parts.append(f"imageSrc: '{esc(entry['imageSrc'])}'")
+    if is_qin:
+        parts.append("note: '戰國文字分秦系與六國古文兩系；簡文書寫年代多在戰國晚期，墓葬在秦始皇三十年（前217）。'")
     return '{ ' + ', '.join(parts) + ' }'
 
 
@@ -304,6 +323,9 @@ def generate() -> str:
         for era in ERA_ORDER:
             eprov = prov.get(era)
             hku_entries = char_hku.get(HKU_ERA_MAP.get(era, ''), []) if era in HKU_ERA_MAP else []
+            if era == 'zhanguo' and not hku_entries:
+                # 无战国金文时，退回该库睡虎地秦简（战国晚期秦系文字）
+                hku_entries = char_hku.get('zhanguo_qin', [])
             if era == 'xiaozhuan' and shuowen:
                 # 說文数据存在 → 强制生成 verified 小篆条目（覆盖 provenance 空缺）
                 xz_hku = char_hku.get('xiaozhuan', [])
@@ -318,7 +340,9 @@ def generate() -> str:
                 insts = [build_hku_instance(era, char, e, i + 1) for i, e in enumerate(hku_entries)]
                 entries.append(f"{{ era: '{era}', instances: [{', '.join(insts)}], isGap: false }}")
             elif eprov is None or eprov == 'gap':
-                note = GAP_NOTES.get(era) if curated else GAP_NOTES_DEFAULT.get(era)
+                note = CHAR_GAP_NOTES.get(char, {}).get(era)
+                if not note:
+                    note = GAP_NOTES.get(era) if curated else GAP_NOTES_DEFAULT.get(era)
                 entries.append(build_era_entry(era, char, 'gap', None, gap_note=note))
             else:
                 entries.append(build_era_entry(era, char, eprov, None))
