@@ -34,6 +34,18 @@ HKU_SOURCE_REF = {
     'lishu': '簡帛寫本（《馬王堆漢墓帛書》《睡虎地秦墓竹簡》，據《漢語多功能字庫》）',
 }
 
+KAISHU_PATH = os.path.join(ROOT, 'data', 'kaishu_glyphs.json')
+
+# 书法家 → 朝代（用于楷书断代；未列者留空）
+CALLIGRAPHER_DYNASTY = {
+    '张即之': '南宋', '于右任': '近代', '董其昌': '明', '迺贤': '元',
+    '麦华三': '现代', '彭年': '明', '赵孟頫': '元', '潘伯鹰': '近代',
+    '沈度': '明', '文征明': '明', '王羲之': '东晋', '颜真卿': '唐',
+    '柳公权': '唐', '欧阳询': '唐', '褚遂良': '唐', '虞世南': '唐',
+    '米芾': '北宋', '苏轼': '北宋', '黄庭坚': '北宋', '邓石如': '清',
+    '赵之谦': '清', '吴昌硕': '近代', '王玄宗': '唐',
+}
+
 ERA_ORDER = ['jiaguwen', 'jinwen', 'zhanguo', 'xiaozhuan', 'lishu', 'kaishu']
 
 GAP_NOTES = {
@@ -156,6 +168,30 @@ def build_hku_instance(era: str, char: str, entry: dict, n: int) -> str:
     return '{ ' + ', '.join(parts) + ' }'
 
 
+def build_kaishu_instance(char: str, entry: dict, n: int) -> str:
+    """由「词典网·书法字典」一条楷书字形记录生成 GlyphInstance（含真图 + 碑帖/书家）。"""
+    calligrapher = entry.get('calligrapher', '')
+    work = entry.get('work', '')
+    parts = [
+        f"id: '{esc(char)}-kaishu-{n}'",
+        "era: 'kaishu'",
+        f"artifact: '{esc(work or calligrapher)}'",
+    ]
+    if calligrapher:
+        parts.append(f"catalogId: '{esc(calligrapher + ' 書')}'")
+    if work:
+        parts.append(f"sourceRef: '{esc('《' + work + '》' + (calligrapher + '書' if calligrapher else ''))}'")
+    else:
+        parts.append(f"sourceRef: '{esc(calligrapher + '書（歷代碑帖）')}'")
+    dyn = CALLIGRAPHER_DYNASTY.get(calligrapher)
+    if dyn:
+        parts.append(f"dateRange: '{esc(dyn)}'")
+    parts.append("verification: 'verified'")
+    parts.append("verifier: '词典网·书法字典（据历代碑帖）'")
+    parts.append(f"imageSrc: '{esc(entry['imageSrc'])}'")
+    return '{ ' + ', '.join(parts) + ' }'
+
+
 def build_instance(era: str, char: str, prov: dict, shuowen: dict | None,
                    fallback_img: str | None = None) -> str:
     """生成一条 GlyphInstance 对象字面量。"""
@@ -214,6 +250,11 @@ def generate() -> str:
         with open(HKU_PATH, 'r', encoding='utf-8') as f:
             hku = json.load(f)
 
+    kaishu = {}
+    if os.path.exists(KAISHU_PATH):
+        with open(KAISHU_PATH, 'r', encoding='utf-8') as f:
+            kaishu = json.load(f)
+
     out = []
     out.append('/**')
     out.append(' * 汉字字形演变证据链数据')
@@ -221,6 +262,7 @@ def generate() -> str:
     out.append(' * 由 tools/generate_glyph_data.py 生成。')
     out.append(' * 小篆：维基文库《說文解字》（已核对）。')
     out.append(' * 甲骨/金文/战国/隶：香港中文大学《漢語多功能字庫》字形（已核对，附器名/合集号）。')
+    out.append(' * 楷书：词典网·书法字典所收历代碑帖（已核对，附碑帖名/书家）。')
     out.append(' * 其余时代著录出处已标明，核对状态为「待核对」。')
     out.append(' *')
     out.append(' * 铁律：每字形挂实物出处 + 核对状态；无实例即缺环；不用示意图冒充实物。')
@@ -234,6 +276,7 @@ def generate() -> str:
     for char, prov in PROVENANCE.items():
         shuowen = index.get(char)
         char_hku = hku.get(char, {})
+        char_kaishu = kaishu.get(char, [])
         entries = []
         for era in ERA_ORDER:
             eprov = prov.get(era)
@@ -244,6 +287,9 @@ def generate() -> str:
                 fb = xz_hku[0]['imageSrc'] if xz_hku else None
                 inst = build_instance('xiaozhuan', char, {}, shuowen, fb)
                 entries.append(f"{{ era: 'xiaozhuan', instances: [{inst}], isGap: false }}")
+            elif era == 'kaishu' and char_kaishu:
+                insts = [build_kaishu_instance(char, e, i + 1) for i, e in enumerate(char_kaishu)]
+                entries.append(f"{{ era: 'kaishu', instances: [{', '.join(insts)}], isGap: false }}")
             elif hku_entries:
                 # 有《漢語多功能字庫》真图与出处 → 一或多件实例（已核对）
                 insts = [build_hku_instance(era, char, e, i + 1) for i, e in enumerate(hku_entries)]

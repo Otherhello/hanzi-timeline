@@ -24,3 +24,9 @@ pnpm-debug.log*
 # 预抓取缓存（可选：抓取脚本的中间产物，若想追踪再手动去掉）
 *.tmp
 .scrape-cache/
+
+# 抓取调试产物
+tools/*.html
+tools/v2api.js
+__pycache__/
+*.pyc

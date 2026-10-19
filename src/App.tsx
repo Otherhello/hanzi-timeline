@@ -39,7 +39,7 @@ export default function App() {
       <div className="sourcebar">
         <span className="dot dot--live" />
         数据源：{realSource.name}
-        <span className="tag">甲骨·金文·戰國·小篆·隸 已核对 · 楷 待核</span>
+        <span className="tag">六期皆有实物字形 · 附出处</span>
       </div>
 
       {loading && <div className="loading">正 在 寻 检 ……</div>}
@@ -49,10 +49,10 @@ export default function App() {
       <div className="legend">
         <h4>说 明</h4>
         <ul>
-          <li><b>实物出处</b>：每个字形均标注其出自哪片甲骨、哪件青铜器、哪件写本或哪部字书。</li>
-          <li><b>核对状态</b>：<span className="badge badge--verified"><span className="badge-dot" />已核对</span> 印章红示已核对——甲骨／金文／战国／隶出自香港中文大学《漢語多功能字庫》字形库（附《合集》《集成》器号），小篆出自维基文库《說文解字》；<span className="badge badge--pending"><span className="badge-dot" />待核对</span> 淡墨灰示出处已标明、尚未逐件核验。</li>
+          <li><b>实物出处</b>：每个字形均标注其出自哪片甲骨、哪件青铜器、哪部简帛、哪件碑帖或哪部字书。</li>
+          <li><b>核对状态</b>：<span className="badge badge--verified"><span className="badge-dot" />已核对</span> 印章红示已核对——甲骨／金文／战国／隶出自香港中文大学《漢語多功能字庫》（附《合集》《集成》器号），小篆出自维基文库《說文解字》，楷书出自历代碑帖（附碑帖名与书家）；<span className="badge badge--pending"><span className="badge-dot" />待核对</span> 淡墨灰示出处已标明、尚未逐件核验。</li>
           <li><b>缺环</b>：某时代无可信实例时，以「缺」空白帧说明，绝不倒填后世字形、不用示意图冒充实物。</li>
-          <li><b>影像依据</b>：各期字形图取自可溯源的学术字形库（《漢語多功能字庫》《說文解字》），每图对应具体甲骨／青铜器／简帛／字书，非凭空杜撰。</li>
+          <li><b>影像依据</b>：各期字形图取自可溯源的学术字形库与书法字典，每图对应具体甲骨／青铜器／简帛／碑帖／字书，非凭空杜撰。</li>
         </ul>
       </div>
     </div>

@@ -1,0 +1,178 @@
+{
+ "馬": [
+  {
+   "imageSrc": "glyphs/馬-kaishu-1.jpg",
+   "calligrapher": "张即之",
+   "work": "王友度墓志",
+   "alt": "张即之王友度墓志中馬的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/zhangjizhi/202110810431326cc3.jpg",
+   "bytes": 15266
+  },
+  {
+   "imageSrc": "glyphs/馬-kaishu-2.jpg",
+   "calligrapher": "于右任",
+   "work": "曾孟鸣碑",
+   "alt": "于右任曾孟鸣碑中馬的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/yuyouren/2021108103711bc74.jpg",
+   "bytes": 10328
+  }
+ ],
+ "牛": [
+  {
+   "imageSrc": "glyphs/牛-kaishu-1.jpg",
+   "calligrapher": "董其昌",
+   "work": "仿颜真卿倪宽赞传",
+   "alt": "董其昌仿颜真卿倪宽赞传中牛的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/dongqichang/2019725115014f4913.jpg",
+   "bytes": 9878
+  },
+  {
+   "imageSrc": "glyphs/牛-kaishu-2.jpg",
+   "calligrapher": "迺贤",
+   "work": "南城咏古诗帖",
+   "alt": "迺贤南城咏古诗帖中牛的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/a/202110816182f56f9.jpg",
+   "bytes": 11402
+  }
+ ],
+ "山": [
+  {
+   "imageSrc": "glyphs/山-kaishu-1.jpg",
+   "calligrapher": "迺贤",
+   "work": "南城咏古诗帖",
+   "alt": "迺贤南城咏古诗帖中山的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/a/20211081618143f1e.jpg",
+   "bytes": 7886
+  },
+  {
+   "imageSrc": "glyphs/山-kaishu-2.jpg",
+   "calligrapher": "彭年",
+   "work": "富春江石子诗卷",
+   "alt": "彭年富春江石子诗卷中山的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/pengnian/202110711194696425.jpg",
+   "bytes": 5122
+  }
+ ],
+ "水": [
+  {
+   "imageSrc": "glyphs/水-kaishu-1.jpg",
+   "calligrapher": "赵孟頫",
+   "work": "真草千字文",
+   "alt": "赵孟頫真草千字文中水的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/zhaomengfu/20211081658175dd9a.jpg",
+   "bytes": 28657
+  },
+  {
+   "imageSrc": "glyphs/水-kaishu-2.jpg",
+   "calligrapher": "潘伯鹰",
+   "work": "临大字阴符经",
+   "alt": "潘伯鹰临大字阴符经中水的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/a/202110816432585147.jpg",
+   "bytes": 18647
+  },
+  {
+   "imageSrc": "glyphs/水-kaishu-3.jpg",
+   "calligrapher": "迺贤",
+   "work": "南城咏古诗帖",
+   "alt": "迺贤南城咏古诗帖中水的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/a/2021108161827a3d9.jpg",
+   "bytes": 9267
+  }
+ ],
+ "日": [
+  {
+   "imageSrc": "glyphs/日-kaishu-1.jpg",
+   "calligrapher": "赵孟頫",
+   "work": "真草千字文",
+   "alt": "赵孟頫真草千字文中日的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/zhaomengfu/2021108165830dc525.jpg",
+   "bytes": 22076
+  },
+  {
+   "imageSrc": "glyphs/日-kaishu-2.jpg",
+   "calligrapher": "沈度",
+   "work": "敬斋箴",
+   "alt": "沈度敬斋箴中日的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/shendu/2021108124652f23a1.jpg",
+   "bytes": 8874
+  },
+  {
+   "imageSrc": "glyphs/日-kaishu-3.jpg",
+   "calligrapher": "潘伯鹰",
+   "work": "临大字阴符经",
+   "alt": "潘伯鹰临大字阴符经中日的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/a/202110816432414ed1.jpg",
+   "bytes": 11076
+  }
+ ],
+ "月": [
+  {
+   "imageSrc": "glyphs/月-kaishu-1.jpg",
+   "calligrapher": "赵孟頫",
+   "work": "真草千字文",
+   "alt": "赵孟頫真草千字文中月的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/zhaomengfu/2021108165815436a2.jpg",
+   "bytes": 25877
+  },
+  {
+   "imageSrc": "glyphs/月-kaishu-2.jpg",
+   "calligrapher": "张即之",
+   "work": "王友度墓志",
+   "alt": "张即之王友度墓志中月的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/zhangjizhi/2021108104390bebd.jpg",
+   "bytes": 16846
+  },
+  {
+   "imageSrc": "glyphs/月-kaishu-3.jpg",
+   "calligrapher": "潘伯鹰",
+   "work": "临大字阴符经",
+   "alt": "潘伯鹰临大字阴符经中月的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/a/202110816432462bfa.jpg",
+   "bytes": 14391
+  }
+ ],
+ "人": [
+  {
+   "imageSrc": "glyphs/人-kaishu-1.jpg",
+   "calligrapher": "赵孟頫",
+   "work": "真草千字文",
+   "alt": "赵孟頫真草千字文中人的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/zhaomengfu/20211081658197b254.jpg",
+   "bytes": 19303
+  },
+  {
+   "imageSrc": "glyphs/人-kaishu-2.jpg",
+   "calligrapher": "潘伯鹰",
+   "work": "临大字阴符经",
+   "alt": "潘伯鹰临大字阴符经中人的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/a/2021108164319e5136.jpg",
+   "bytes": 11088
+  },
+  {
+   "imageSrc": "glyphs/人-kaishu-3.jpg",
+   "calligrapher": "迺贤",
+   "work": "南城咏古诗帖",
+   "alt": "迺贤南城咏古诗帖中人的写法",
+   "script": "kaishu",
+   "srcUrl": "https://c.cidianwang.com/file/shufa/kaishu/a/20211081617577b2d4.jpg",
+   "bytes": 8700
+  }
+ ]
+}
