@@ -21,6 +21,8 @@ export interface Backdrop {
   script: string
   /** 相对路径（base: './'，部署在子路径下亦可用） */
   src: string
+  /** 原图为深色拓本，展示时已反白为墨稿；此处如实记录该处理 */
+  inverted?: boolean
   /** 该图在维基共享资源的说明页 */
   source: string
 }
@@ -78,6 +80,7 @@ export const BACKDROPS: Backdrop[] = [
     period: '東漢',
     script: '隸書',
     src: 'backdrops/caoquanbei.jpg',
+    inverted: true,
     source: 'https://commons.wikimedia.org/wiki/File:%E6%9B%B9%E5%85%A8%E7%A2%91.jpg',
   },
   {
@@ -88,15 +91,6 @@ export const BACKDROPS: Backdrop[] = [
     script: '行書',
     src: 'backdrops/shusutie.jpg',
     source: 'https://commons.wikimedia.org/wiki/File:%E5%AE%8B%E7%B1%B3%E8%8A%BE%E8%9C%80%E7%B4%A0%E5%B8%96_%E5%8D%B7.png',
-  },
-  {
-    key: 'shimensong',
-    name: '石門頌',
-    artist: '佚名',
-    period: '東漢',
-    script: '隸書',
-    src: 'backdrops/shimensong.jpg',
-    source: 'https://commons.wikimedia.org/wiki/File:%E3%80%88%E5%8F%B8%E9%9A%B8%E6%A0%A1%E5%B0%89%E6%A5%97%E7%82%BA%E6%A5%8A%E5%90%9B%E9%A0%8C%E3%80%89%E6%8B%93%E6%9C%AC.jpg',
   },
 ]
 

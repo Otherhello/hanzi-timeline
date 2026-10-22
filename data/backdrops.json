@@ -69,7 +69,8 @@
   "source": "https://commons.wikimedia.org/wiki/File:曹全碑.jpg",
   "title": "File:曹全碑.jpg",
   "size": "668x1400",
-  "kb": 244.7
+  "kb": 244.7,
+  "inverted": true
  },
  "shusutie": {
   "key": "shusutie",
@@ -82,17 +83,5 @@
   "title": "File:宋米芾蜀素帖 卷.png",
   "size": "1400x880",
   "kb": 201.2
- },
- "shimensong": {
-  "key": "shimensong",
-  "name": "石門頌",
-  "artist": "佚名",
-  "period": "東漢",
-  "script": "隸書",
-  "file": "backdrops/shimensong.jpg",
-  "source": "https://commons.wikimedia.org/wiki/File:〈司隸校尉楗為楊君頌〉拓本.jpg",
-  "title": "File:〈司隸校尉楗為楊君頌〉拓本.jpg",
-  "size": "1400x1400",
-  "kb": 456.7
  }
 }

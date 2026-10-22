@@ -78,18 +78,18 @@ p { margin: 0; }
 
 .backdrop {
   position: fixed;
-  inset: -10vmax;
+  inset: -4vmax;
   z-index: -2;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(26px) saturate(0.45) contrast(0.9) brightness(1.04);
+  filter: blur(9px) saturate(0.55) contrast(0.92) brightness(1.02);
   opacity: 0;
-  transition: opacity 1.8s ease;
+  transition: opacity 1.6s ease;
   pointer-events: none;
   will-change: opacity;
 }
-.backdrop.is-ready { opacity: 0.56; }
+.backdrop.is-ready { opacity: 0.78; }
 
 .backdrop-veil {
   position: fixed;
@@ -97,11 +97,20 @@ p { margin: 0; }
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(120% 85% at 50% 0%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 58%),
+    /* 顶部白晕：为页眉留呼吸 */
+    radial-gradient(120% 62% at 50% -8%, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0) 62%),
+    /* 中柱纸色：正文所在区域压干净，四周留出字形 */
+    radial-gradient(72% 82% at 50% 46%,
+      rgba(246, 241, 230, 0.94) 0%,
+      rgba(246, 241, 230, 0.88) 38%,
+      rgba(246, 241, 230, 0.46) 66%,
+      rgba(246, 241, 230, 0.1) 86%,
+      rgba(246, 241, 230, 0) 100%),
+    /* 底边略收，页脚不发灰 */
     linear-gradient(180deg,
-      rgba(246, 241, 230, 0.72) 0%,
-      rgba(246, 241, 230, 0.62) 45%,
-      rgba(246, 241, 230, 0.54) 100%);
+      rgba(246, 241, 230, 0) 0%,
+      rgba(246, 241, 230, 0) 72%,
+      rgba(246, 241, 230, 0.38) 100%);
 }
 /* 纸纹压在罩层之上，保住手工纸的经纬感 */
 .backdrop-veil::after {
@@ -146,8 +155,8 @@ p { margin: 0; }
 }
 
 @media (max-width: 640px) {
-  .backdrop { filter: blur(18px) saturate(0.45) contrast(0.9) brightness(1.04); }
-  .backdrop.is-ready { opacity: 0.46; }
+  .backdrop { filter: blur(14px) saturate(0.55) contrast(0.92) brightness(1.02); }
+  .backdrop.is-ready { opacity: 0.62; }
   .backdrop-caption { display: none; }
 }
 

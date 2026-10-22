@@ -10,7 +10,7 @@
 
 import json, os, ssl, sys, time, urllib.error, urllib.parse, urllib.request
 
-from PIL import Image
+from PIL import Image, ImageOps
 
 UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/120 Safari/537.36')
@@ -44,8 +44,6 @@ WORKS = [
      ['多寶塔碑 拓本', 'Yan Zhenqing Duobao Pagoda', '多寶塔碑']),
     ('caoquanbei', '曹全碑', '佚名', '東漢', '隸書',
      ['曹全碑 拓本', '曹全碑', 'Cao Quan Bei rubbing']),
-    ('shimensong', '石門頌', '佚名', '東漢', '隸書',
-     ['石門頌 拓本', '石門頌', 'Shimen Song rubbing', 'Shimen Song']),
     ('shusutie', '蜀素帖', '米芾', '北宋', '行書',
      ['蜀素帖 米芾', '蜀素帖', 'Mi Fu Shusu']),
 ]
@@ -215,7 +213,15 @@ def main():
         if mw > 1400:
             r = 1400 / mw
             img = img.resize((int(img.width * r), int(img.height * r)), Image.LANCZOS)
-        img.save(dest, 'JPEG', quality=76, optimize=True, progressive=True)
+        # 深色拓本反白为墨稿：与「宣纸 + 墨」的整体调子统一，
+        # 否则整屏会压成灰黑，干扰正文。反白事实记入 manifest 的 inverted 字段。
+        inverted = False
+        gray = img.convert('L')
+        if sum(gray.resize((48, 48)).getdata()) / (48 * 48) < 125:
+            img = ImageOps.autocontrast(ImageOps.invert(gray), cutoff=1).convert('RGB')
+            inverted = True
+            print('   .. 原图为深色拓本，已反白')
+        img.save(dest, 'JPEG', quality=80, optimize=True, progressive=True)
         size_kb = os.path.getsize(dest) / 1024
         page = 'https://commons.wikimedia.org/wiki/' + title.replace(' ', '_')
         manifest[key] = {
@@ -223,6 +229,7 @@ def main():
             'script': script, 'file': f'backdrops/{key}.jpg',
             'source': page, 'title': title,
             'size': f'{img.width}x{img.height}', 'kb': round(size_kb, 1),
+            **({'inverted': True} if inverted else {}),
         }
         print(f'   ✓ {key}.jpg  {img.width}x{img.height}  {size_kb:.0f} KB')
         json.dump(manifest, open(MANIFEST, 'w', encoding='utf-8'),
