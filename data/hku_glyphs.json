@@ -4,52 +4,68 @@
       {
         "imageSrc": "glyphs/馬-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1630)",
-        "bytes": 2128
+        "bytes": 2128,
+        "srcPath": "oracle.php?code=E8BF",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E8BF"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/馬-jinwen-1.jpg",
         "provenance": "父辛尊[商代](CHANT:5749)",
-        "bytes": 2425
+        "bytes": 2425,
+        "srcPath": "bronze.php?id=78550",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=78550"
       },
       {
         "imageSrc": "glyphs/馬-jinwen-2.jpg",
         "provenance": "小臣守[西周](CHANT:4179)",
-        "bytes": 2678
+        "bytes": 2678,
+        "srcPath": "bronze.php?id=47963",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=47963"
       },
       {
         "imageSrc": "glyphs/馬-jinwen-3.jpg",
         "provenance": "大馬簠[春秋早期](CHANT:4505)",
-        "bytes": 2461
+        "bytes": 2461,
+        "srcPath": "bronze.php?id=68055",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=68055"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/馬-zhanguo-1.jpg",
         "provenance": "噩君車節[戰國](CHANT:12110)",
-        "bytes": 1864
+        "bytes": 1864,
+        "srcPath": "bronze.php?id=110879",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=110879"
       }
     ],
     "zhuanwen": [
       {
         "imageSrc": "glyphs/馬-zhuanwen-1.jpg",
         "provenance": "說文籀文(康熙圖)",
-        "bytes": 2008
+        "bytes": 2008,
+        "srcPath": "kangxiArchaic.php?hash=046f3b509116cbdc24d1379428813905",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=046f3b509116cbdc24d1379428813905"
       }
     ],
     "xiaozhuan": [
       {
         "imageSrc": "glyphs/馬-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1818
+        "bytes": 1818,
+        "srcPath": "kangxiArchaic.php?hash=ba4d618d1e3a66b248ae2a12edf56a90",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=ba4d618d1e3a66b248ae2a12edf56a90"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/馬-lishu-1.jpg",
         "provenance": "馬王堆．足臂十一脈灸經．8",
-        "bytes": 1658
+        "bytes": 1658,
+        "srcPath": "silk.php?hash=94bb54aab99c8c9e9bc7ba9621a9e707",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=94bb54aab99c8c9e9bc7ba9621a9e707"
       }
     ]
   },
@@ -58,26 +74,34 @@
       {
         "imageSrc": "glyphs/牛-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1545)",
-        "bytes": 1883
+        "bytes": 1883,
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E856",
+        "srcPath": "oracle.php?code=E856"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/牛-jinwen-1.jpg",
         "provenance": "牛方鼎[商代](CHANT:1102)",
-        "bytes": 2356
+        "bytes": 2356,
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17237",
+        "srcPath": "bronze.php?id=17237"
       },
       {
         "imageSrc": "glyphs/牛-jinwen-2.jpg",
         "provenance": "牛鼎[西周早期](CHANT:1104)",
-        "bytes": 2660
+        "bytes": 2660,
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17239",
+        "srcPath": "bronze.php?id=17239"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/牛-zhanguo-1.jpg",
         "provenance": "噩君車節[戰國](CHANT:12112)",
-        "bytes": 2489
+        "bytes": 2489,
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=111088",
+        "srcPath": "bronze.php?id=111088"
       }
     ],
     "zhuanwen": [],
@@ -85,14 +109,18 @@
       {
         "imageSrc": "glyphs/牛-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1439
+        "bytes": 1439,
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=f6c7e1c20a65310b5f49a2c7d1a8fb3f",
+        "srcPath": "kangxiArchaic.php?hash=f6c7e1c20a65310b5f49a2c7d1a8fb3f"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/牛-lishu-1.jpg",
         "provenance": "馬王堆．五十二病方．182",
-        "bytes": 1576
+        "bytes": 1576,
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=501be56fa3665b0d352b7606fe7e68a8",
+        "srcPath": "silk.php?hash=501be56fa3665b0d352b7606fe7e68a8"
       }
     ]
   },
@@ -101,31 +129,41 @@
       {
         "imageSrc": "glyphs/山-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1218)",
-        "bytes": 1918
+        "bytes": 1918,
+        "srcPath": "oracle.php?code=E640",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E640"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/山-jinwen-1.jpg",
         "provenance": "母鼎[商代](CHANT:2026)",
-        "bytes": 3216
+        "bytes": 3216,
+        "srcPath": "bronze.php?id=19183",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=19183"
       },
       {
         "imageSrc": "glyphs/山-jinwen-2.jpg",
         "provenance": "山父乙鼎[西周早期](CHANT:1561)",
-        "bytes": 2043
+        "bytes": 2043,
+        "srcPath": "bronze.php?id=17828",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17828"
       },
       {
         "imageSrc": "glyphs/山-jinwen-3.jpg",
         "provenance": "奢淲簠[春秋早期](CHANT:4539)",
-        "bytes": 2533
+        "bytes": 2533,
+        "srcPath": "bronze.php?id=68400",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=68400"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/山-zhanguo-1.jpg",
         "provenance": "中山鉞[戰國中晚期](CHANT:11758)",
-        "bytes": 3224
+        "bytes": 3224,
+        "srcPath": "bronze.php?id=109717",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=109717"
       }
     ],
     "zhuanwen": [],
@@ -133,14 +171,18 @@
       {
         "imageSrc": "glyphs/山-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1491
+        "bytes": 1491,
+        "srcPath": "kangxiArchaic.php?hash=2b97e764c919e45a5d6ec0bc32b81775",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=2b97e764c919e45a5d6ec0bc32b81775"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/山-lishu-1.jpg",
         "provenance": "馬王堆．老子甲本卷後古佚書．336",
-        "bytes": 1700
+        "bytes": 1700,
+        "srcPath": "silk.php?hash=b4aa054da30da87d08fdc44cd4f15505",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=b4aa054da30da87d08fdc44cd4f15505"
       }
     ]
   },
@@ -149,21 +191,27 @@
       {
         "imageSrc": "glyphs/水-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1305)",
-        "bytes": 1616
+        "bytes": 1616,
+        "srcPath": "oracle.php?code=E6B3",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E6B3"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/水-jinwen-1.jpg",
         "provenance": "沈子它蓋（它）[西周早期](CHANT:4330)",
-        "bytes": 3075
+        "bytes": 3075,
+        "srcPath": "bronze.php?id=61969",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=61969"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/水-zhanguo-1.jpg",
         "provenance": "魚鼎匕[戰國](CHANT:980)",
-        "bytes": 2692
+        "bytes": 2692,
+        "srcPath": "bronze.php?id=17147",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17147"
       }
     ],
     "zhuanwen": [],
@@ -171,14 +219,18 @@
       {
         "imageSrc": "glyphs/水-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1483
+        "bytes": 1483,
+        "srcPath": "kangxiArchaic.php?hash=bebddde151c13deaf78871e59b29265f",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=bebddde151c13deaf78871e59b29265f"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/水-lishu-1.jpg",
         "provenance": "馬王堆．五十二病方．104",
-        "bytes": 1655
+        "bytes": 1655,
+        "srcPath": "silk.php?hash=0f1133e3b0b61c58214d54bf78492142",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=0f1133e3b0b61c58214d54bf78492142"
       }
     ]
   },
@@ -187,31 +239,41 @@
       {
         "imageSrc": "glyphs/日-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1136)",
-        "bytes": 1868
+        "bytes": 1868,
+        "srcPath": "oracle.php?code=E5C4",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E5C4"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/日-jinwen-1.jpg",
         "provenance": "婦卣[商代](CHANT:5349)",
-        "bytes": 2606
+        "bytes": 2606,
+        "srcPath": "bronze.php?id=74674",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=74674"
       },
       {
         "imageSrc": "glyphs/日-jinwen-2.jpg",
         "provenance": "[西周](CHANT:3913)",
-        "bytes": 2410
+        "bytes": 2410,
+        "srcPath": "bronze.php?id=40412",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=40412"
       },
       {
         "imageSrc": "glyphs/日-jinwen-3.jpg",
         "provenance": "書缶[春秋](CHANT:10008)",
-        "bytes": 2043
+        "bytes": 2043,
+        "srcPath": "bronze.php?id=97191",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=97191"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/日-zhanguo-1.jpg",
         "provenance": "噩君舟節[戰國](CHANT:12113)",
-        "bytes": 1851
+        "bytes": 1851,
+        "srcPath": "bronze.php?id=111235",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=111235"
       }
     ],
     "zhuanwen": [],
@@ -219,14 +281,18 @@
       {
         "imageSrc": "glyphs/日-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1743
+        "bytes": 1743,
+        "srcPath": "kangxiArchaic.php?hash=1adf4cfcea56d601975a4d08b7f0d39d",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=1adf4cfcea56d601975a4d08b7f0d39d"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/日-lishu-1.jpg",
         "provenance": "馬王堆．五十二病方．104",
-        "bytes": 1753
+        "bytes": 1753,
+        "srcPath": "silk.php?hash=a0e8d1539f3164eb8e696014af15b067",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=a0e8d1539f3164eb8e696014af15b067"
       }
     ]
   },
@@ -235,31 +301,41 @@
       {
         "imageSrc": "glyphs/月-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1153)",
-        "bytes": 1565
+        "bytes": 1565,
+        "srcPath": "oracle.php?code=E5E2",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E5E2"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/月-jinwen-1.jpg",
         "provenance": "乍父乙[商代](CHANT:4144)",
-        "bytes": 2397
+        "bytes": 2397,
+        "srcPath": "bronze.php?id=46215",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=46215"
       },
       {
         "imageSrc": "glyphs/月-jinwen-2.jpg",
         "provenance": "德方鼎[西周早期](CHANT:2661)",
-        "bytes": 2139
+        "bytes": 2139,
+        "srcPath": "bronze.php?id=24847",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=24847"
       },
       {
         "imageSrc": "glyphs/月-jinwen-3.jpg",
         "provenance": "者鐘[春秋](CHANT:196)",
-        "bytes": 1936
+        "bytes": 1936,
+        "srcPath": "bronze.php?id=5257",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=5257"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/月-zhanguo-1.jpg",
         "provenance": "楚王酓盤[戰國晚期](CHANT:10158)",
-        "bytes": 2658
+        "bytes": 2658,
+        "srcPath": "bronze.php?id=98609",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=98609"
       }
     ],
     "zhuanwen": [],
@@ -267,14 +343,18 @@
       {
         "imageSrc": "glyphs/月-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1475
+        "bytes": 1475,
+        "srcPath": "kangxiArchaic.php?hash=91fe852e07014c35e277c61b5f900158",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=91fe852e07014c35e277c61b5f900158"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/月-lishu-1.jpg",
         "provenance": "馬王堆．五十二病方．104",
-        "bytes": 1821
+        "bytes": 1821,
+        "srcPath": "silk.php?hash=60830f7f04f74e36072f2bf9bf7dfd7e",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=60830f7f04f74e36072f2bf9bf7dfd7e"
       }
     ]
   },
@@ -283,31 +363,41 @@
       {
         "imageSrc": "glyphs/人-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:0001)",
-        "bytes": 1405
+        "bytes": 1405,
+        "srcPath": "oracle.php?code=E000",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E000"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/人-jinwen-1.jpg",
         "provenance": "乍般甗[商代](CHANT:944)",
-        "bytes": 2058
+        "bytes": 2058,
+        "srcPath": "bronze.php?id=16865",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=16865"
       },
       {
         "imageSrc": "glyphs/人-jinwen-2.jpg",
         "provenance": "宜[西周早期](CHANT:4320)",
-        "bytes": 2346
+        "bytes": 2346,
+        "srcPath": "bronze.php?id=60420",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=60420"
       },
       {
         "imageSrc": "glyphs/人-jinwen-3.jpg",
         "provenance": "黃子鼎[春秋早期](CHANT:2566)",
-        "bytes": 1950
+        "bytes": 1950,
+        "srcPath": "bronze.php?id=23156",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=23156"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/人-zhanguo-1.jpg",
         "provenance": "中山王方壺[戰國早期](CHANT:9735)",
-        "bytes": 2708
+        "bytes": 2708,
+        "srcPath": "bronze.php?id=94240",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=94240"
       }
     ],
     "zhuanwen": [],
@@ -315,14 +405,18 @@
       {
         "imageSrc": "glyphs/人-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1417
+        "bytes": 1417,
+        "srcPath": "kangxiArchaic.php?hash=b016eb73aa250897a0bbfa23bcd9b1f8",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=b016eb73aa250897a0bbfa23bcd9b1f8"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/人-lishu-1.jpg",
         "provenance": "馬王堆．五十二病方．100",
-        "bytes": 1501
+        "bytes": 1501,
+        "srcPath": "silk.php?hash=e1bd358babca92f68e416422141186da",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=e1bd358babca92f68e416422141186da"
       }
     ]
   },
@@ -335,14 +429,18 @@
       {
         "imageSrc": "glyphs/紙-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1877
+        "bytes": 1877,
+        "srcPath": "kangxiArchaic.php?hash=97fcff8dcdc6b9dd7338d67bf80e357e",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=97fcff8dcdc6b9dd7338d67bf80e357e"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/紙-lishu-1.jpg",
         "provenance": "睡虎地秦簡．日書甲種．61背-2",
-        "bytes": 1948
+        "bytes": 1948,
+        "srcPath": "silk.php?hash=14f725567478cf6dd50926867ab016ae",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=14f725567478cf6dd50926867ab016ae"
       }
     ]
   },
@@ -351,19 +449,25 @@
       {
         "imageSrc": "glyphs/木-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1402)",
-        "bytes": 1721
+        "bytes": 1721,
+        "srcPath": "oracle.php?code=E76B",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E76B"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/木-jinwen-1.jpg",
         "provenance": "木父辛卣[商代](CHANT:5166)",
-        "bytes": 2024
+        "bytes": 2024,
+        "srcPath": "bronze.php?id=73031",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=73031"
       },
       {
         "imageSrc": "glyphs/木-jinwen-2.jpg",
         "provenance": "曶鼎[西周中期](CHANT:2838)",
-        "bytes": 1993
+        "bytes": 1993,
+        "srcPath": "bronze.php?id=33744",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=33744"
       }
     ],
     "zhanguo": [],
@@ -371,7 +475,9 @@
       {
         "imageSrc": "glyphs/木-zhanguo_qin-1.jpg",
         "provenance": "睡虎地秦簡．秦律十八種．10",
-        "bytes": 1997
+        "bytes": 1997,
+        "srcPath": "silk.php?hash=6eff37e878a09b535a4e49dc661a7a2c",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=6eff37e878a09b535a4e49dc661a7a2c"
       }
     ],
     "zhuanwen": [],
@@ -379,14 +485,18 @@
       {
         "imageSrc": "glyphs/木-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1754
+        "bytes": 1754,
+        "srcPath": "kangxiArchaic.php?hash=52902dc83cf43f55ec937b30be9647b0",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=52902dc83cf43f55ec937b30be9647b0"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/木-lishu-1.jpg",
         "provenance": "馬王堆．陰陽十一脈灸經甲本．45",
-        "bytes": 1657
+        "bytes": 1657,
+        "srcPath": "silk.php?hash=badf098a5034f35d8898adfd62d7df3e",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=badf098a5034f35d8898adfd62d7df3e"
       }
     ]
   },
@@ -395,26 +505,34 @@
       {
         "imageSrc": "glyphs/土-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1211)",
-        "bytes": 1846
+        "bytes": 1846,
+        "srcPath": "oracle.php?code=E62E",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E62E"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/土-jinwen-1.jpg",
         "provenance": "大盂鼎[西周早期](CHANT:2837)",
-        "bytes": 1806
+        "bytes": 1806,
+        "srcPath": "bronze.php?id=33418",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=33418"
       },
       {
         "imageSrc": "glyphs/土-jinwen-2.jpg",
         "provenance": "吳王孫無土鼎[春秋晚期](CHANT:2359)",
-        "bytes": 1720
+        "bytes": 1720,
+        "srcPath": "bronze.php?id=20838",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=20838"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/土-zhanguo-1.jpg",
         "provenance": "哀成弔鼎[戰國](CHANT:2782)",
-        "bytes": 2097
+        "bytes": 2097,
+        "srcPath": "bronze.php?id=28384",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=28384"
       }
     ],
     "zhuanwen": [],
@@ -422,14 +540,18 @@
       {
         "imageSrc": "glyphs/土-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1497
+        "bytes": 1497,
+        "srcPath": "kangxiArchaic.php?hash=74376631f9cbc5a1fd7a059eb86cd9d8",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=74376631f9cbc5a1fd7a059eb86cd9d8"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/土-lishu-1.jpg",
         "provenance": "馬王堆．五十二病方．115",
-        "bytes": 1538
+        "bytes": 1538,
+        "srcPath": "silk.php?hash=22c612c1b10020a6c8aab07fc7b90736",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=22c612c1b10020a6c8aab07fc7b90736"
       }
     ]
   },
@@ -438,19 +560,25 @@
       {
         "imageSrc": "glyphs/田-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:2189)",
-        "bytes": 2239
+        "bytes": 2239,
+        "srcPath": "oracle.php?code=EC35",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=EC35"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/田-jinwen-1.jpg",
         "provenance": "二祀其卣[商代](CHANT:5412)",
-        "bytes": 2687
+        "bytes": 2687,
+        "srcPath": "bronze.php?id=76364",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=76364"
       },
       {
         "imageSrc": "glyphs/田-jinwen-2.jpg",
         "provenance": "田告罍[西周早期](CHANT:9777)",
-        "bytes": 2543
+        "bytes": 2543,
+        "srcPath": "bronze.php?id=94614",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=94614"
       }
     ],
     "zhanguo": [],
@@ -458,7 +586,9 @@
       {
         "imageSrc": "glyphs/田-zhanguo_qin-1.jpg",
         "provenance": "睡虎地秦簡．語書．4",
-        "bytes": 2207
+        "bytes": 2207,
+        "srcPath": "silk.php?hash=f77e5451493cf64782a4792fe83769ff",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=f77e5451493cf64782a4792fe83769ff"
       }
     ],
     "zhuanwen": [],
@@ -466,14 +596,18 @@
       {
         "imageSrc": "glyphs/田-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1760
+        "bytes": 1760,
+        "srcPath": "kangxiArchaic.php?hash=07c5be586d500b18ebe2aefa5bc5ac29",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=07c5be586d500b18ebe2aefa5bc5ac29"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/田-lishu-1.jpg",
         "provenance": "馬王堆．雜療方．66",
-        "bytes": 1724
+        "bytes": 1724,
+        "srcPath": "silk.php?hash=d1a4f795292825fa7ff05f1150b55956",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=d1a4f795292825fa7ff05f1150b55956"
       }
     ]
   },
@@ -482,26 +616,34 @@
       {
         "imageSrc": "glyphs/雨-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1180)",
-        "bytes": 1707
+        "bytes": 1707,
+        "srcPath": "oracle.php?code=E600",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E600"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/雨-jinwen-1.jpg",
         "provenance": "子雨己鼎[商代](CHANT:1717)",
-        "bytes": 2736
+        "bytes": 2736,
+        "srcPath": "bronze.php?id=18212",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=18212"
       },
       {
         "imageSrc": "glyphs/雨-jinwen-2.jpg",
         "provenance": "雨乍父乙爵[西周早期](CHANT:8879)",
-        "bytes": 2964
+        "bytes": 2964,
+        "srcPath": "bronze.php?id=86761",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=86761"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/雨-zhanguo-1.jpg",
         "provenance": "壺[戰國晚期](CHANT:9734)",
-        "bytes": 2588
+        "bytes": 2588,
+        "srcPath": "bronze.php?id=94183",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=94183"
       }
     ],
     "zhuanwen": [],
@@ -509,14 +651,18 @@
       {
         "imageSrc": "glyphs/雨-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1628
+        "bytes": 1628,
+        "srcPath": "kangxiArchaic.php?hash=eeabfa6ee93fa3daaef91f50848c3943",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=eeabfa6ee93fa3daaef91f50848c3943"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/雨-lishu-1.jpg",
         "provenance": "馬王堆．老子甲本．138",
-        "bytes": 1757
+        "bytes": 1757,
+        "srcPath": "silk.php?hash=5e86a287284b04f228227a44d8358f49",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=5e86a287284b04f228227a44d8358f49"
       }
     ]
   },
@@ -525,31 +671,41 @@
       {
         "imageSrc": "glyphs/魚-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1812)",
-        "bytes": 2417
+        "bytes": 2417,
+        "srcPath": "oracle.php?code=E9CD",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E9CD"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/魚-jinwen-1.jpg",
         "provenance": "戍嗣子鼎（戍嗣子鼎）[商代](CHANT:2708)",
-        "bytes": 2735
+        "bytes": 2735,
+        "srcPath": "bronze.php?id=25907",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=25907"
       },
       {
         "imageSrc": "glyphs/魚-jinwen-2.jpg",
         "provenance": "犀白魚父鼎[西周](CHANT:2534)",
-        "bytes": 2493
+        "bytes": 2493,
+        "srcPath": "bronze.php?id=22682",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=22682"
       },
       {
         "imageSrc": "glyphs/魚-jinwen-3.jpg",
         "provenance": "冶妊鼎[春秋早期](CHANT:2526)",
-        "bytes": 2202
+        "bytes": 2202,
+        "srcPath": "bronze.php?id=22574",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=22574"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/魚-zhanguo-1.jpg",
         "provenance": "魚鼎匕[戰國](CHANT:980)",
-        "bytes": 2700
+        "bytes": 2700,
+        "srcPath": "bronze.php?id=17165",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17165"
       }
     ],
     "zhuanwen": [],
@@ -557,14 +713,18 @@
       {
         "imageSrc": "glyphs/魚-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1822
+        "bytes": 1822,
+        "srcPath": "kangxiArchaic.php?hash=e52ac1b6fc5008a8d6e00ed59bce819f",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=e52ac1b6fc5008a8d6e00ed59bce819f"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/魚-lishu-1.jpg",
         "provenance": "馬王堆．陰陽十一脈灸經甲本．54",
-        "bytes": 1612
+        "bytes": 1612,
+        "srcPath": "silk.php?hash=82ff28d99816921b76c60b145ec4057f",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=82ff28d99816921b76c60b145ec4057f"
       }
     ]
   },
@@ -573,24 +733,32 @@
       {
         "imageSrc": "glyphs/鳥-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1736)",
-        "bytes": 1719
+        "bytes": 1719,
+        "srcPath": "oracle.php?code=E94B",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E94B"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/鳥-jinwen-1.jpg",
         "provenance": "鳥形銘鼎[商代](CHANT:1120)",
-        "bytes": 2630
+        "bytes": 2630,
+        "srcPath": "bronze.php?id=17247",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17247"
       },
       {
         "imageSrc": "glyphs/鳥-jinwen-2.jpg",
         "provenance": "鳥形銘[西周早期](CHANT:2979)",
-        "bytes": 2200
+        "bytes": 2200,
+        "srcPath": "bronze.php?id=35103",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=35103"
       },
       {
         "imageSrc": "glyphs/鳥-jinwen-3.jpg",
         "provenance": "子之弄鳥尊[春秋晚期](CHANT:5761)",
-        "bytes": 1845
+        "bytes": 1845,
+        "srcPath": "bronze.php?id=78588",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=78588"
       }
     ],
     "zhanguo": [],
@@ -598,7 +766,9 @@
       {
         "imageSrc": "glyphs/鳥-zhanguo_qin-1.jpg",
         "provenance": "睡虎地秦簡．日書甲種．31背-2",
-        "bytes": 2182
+        "bytes": 2182,
+        "srcPath": "silk.php?hash=8b58daafc7eb0c7ee1e8ed226a415ac6",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=8b58daafc7eb0c7ee1e8ed226a415ac6"
       }
     ],
     "zhuanwen": [],
@@ -606,14 +776,18 @@
       {
         "imageSrc": "glyphs/鳥-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1533
+        "bytes": 1533,
+        "srcPath": "kangxiArchaic.php?hash=23619604e301ce51805a69eb3604fa3d",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=23619604e301ce51805a69eb3604fa3d"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/鳥-lishu-1.jpg",
         "provenance": "馬王堆．五十二病方．126",
-        "bytes": 1794
+        "bytes": 1794,
+        "srcPath": "silk.php?hash=39852c923fcf65d1dfe11951dff5bb41",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=39852c923fcf65d1dfe11951dff5bb41"
       }
     ]
   },
@@ -622,19 +796,25 @@
       {
         "imageSrc": "glyphs/犬-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1585)",
-        "bytes": 1858
+        "bytes": 1858,
+        "srcPath": "oracle.php?code=E883",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E883"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/犬-jinwen-1.jpg",
         "provenance": "犬父乙爵[商代](CHANT:8867)",
-        "bytes": 2285
+        "bytes": 2285,
+        "srcPath": "bronze.php?id=86721",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=86721"
       },
       {
         "imageSrc": "glyphs/犬-jinwen-2.jpg",
         "provenance": "史犬觶[西周早期](CHANT:6168)",
-        "bytes": 2102
+        "bytes": 2102,
+        "srcPath": "bronze.php?id=81630",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=81630"
       }
     ],
     "zhanguo": [],
@@ -642,7 +822,9 @@
       {
         "imageSrc": "glyphs/犬-zhanguo_qin-1.jpg",
         "provenance": "睡虎地秦簡．秦律十八種．6",
-        "bytes": 1908
+        "bytes": 1908,
+        "srcPath": "silk.php?hash=4ea01f0bac373656656e321c5c415e71",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=4ea01f0bac373656656e321c5c415e71"
       }
     ],
     "zhuanwen": [],
@@ -650,14 +832,18 @@
       {
         "imageSrc": "glyphs/犬-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1422
+        "bytes": 1422,
+        "srcPath": "kangxiArchaic.php?hash=1b0b3e5a65ac7d1b045d0432a0c262ca",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=1b0b3e5a65ac7d1b045d0432a0c262ca"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/犬-lishu-1.jpg",
         "provenance": "馬王堆．五十二病方．112",
-        "bytes": 1766
+        "bytes": 1766,
+        "srcPath": "silk.php?hash=29f496daf05ba440ff2fcbbc08d4d509",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=29f496daf05ba440ff2fcbbc08d4d509"
       }
     ]
   },
@@ -666,14 +852,18 @@
       {
         "imageSrc": "glyphs/門-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:2167)",
-        "bytes": 2123
+        "bytes": 2123,
+        "srcPath": "oracle.php?code=EC06",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=EC06"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/門-jinwen-1.jpg",
         "provenance": "父丙南門鼎[商代或西周早期](CHANT:1567)",
-        "bytes": 2530
+        "bytes": 2530,
+        "srcPath": "bronze.php?id=17846",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17846"
       }
     ],
     "zhanguo": [],
@@ -681,7 +871,9 @@
       {
         "imageSrc": "glyphs/門-zhanguo_qin-1.jpg",
         "provenance": "睡虎地秦簡．秦律十八種．196",
-        "bytes": 1855
+        "bytes": 1855,
+        "srcPath": "silk.php?hash=85f78e8f7aef6841bb9ba6d6a11ab67f",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=85f78e8f7aef6841bb9ba6d6a11ab67f"
       }
     ],
     "zhuanwen": [],
@@ -689,14 +881,18 @@
       {
         "imageSrc": "glyphs/門-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1664
+        "bytes": 1664,
+        "srcPath": "kangxiArchaic.php?hash=bd73db5c942885a8731d13a06143ca3c",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=bd73db5c942885a8731d13a06143ca3c"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/門-lishu-1.jpg",
         "provenance": "馬王堆．五十二病方．442",
-        "bytes": 1639
+        "bytes": 1639,
+        "srcPath": "silk.php?hash=9a72ccda62d7d1464ff74300c766882c",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=9a72ccda62d7d1464ff74300c766882c"
       }
     ]
   },
@@ -705,19 +901,25 @@
       {
         "imageSrc": "glyphs/貝-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1915)",
-        "bytes": 2392
+        "bytes": 2392,
+        "srcPath": "oracle.php?code=EA76",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=EA76"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/貝-jinwen-1.jpg",
         "provenance": "宰甫卣[商代](CHANT:5395)",
-        "bytes": 2233
+        "bytes": 2233,
+        "srcPath": "bronze.php?id=75532",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=75532"
       },
       {
         "imageSrc": "glyphs/貝-jinwen-2.jpg",
         "provenance": "庚嬴鼎[西周早期](CHANT:2748)",
-        "bytes": 2488
+        "bytes": 2488,
+        "srcPath": "bronze.php?id=26997",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=26997"
       }
     ],
     "zhanguo": [],
@@ -727,14 +929,18 @@
       {
         "imageSrc": "glyphs/貝-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1527
+        "bytes": 1527,
+        "srcPath": "kangxiArchaic.php?hash=fa713a10407f4b9daa0d2ef2a464b81d",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=fa713a10407f4b9daa0d2ef2a464b81d"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/貝-lishu-1.jpg",
         "provenance": "睡虎地秦簡．為吏之道．18-2",
-        "bytes": 1829
+        "bytes": 1829,
+        "srcPath": "silk.php?hash=810d877992159e1350f5fae2d87933b9",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=810d877992159e1350f5fae2d87933b9"
       }
     ]
   },
@@ -743,24 +949,32 @@
       {
         "imageSrc": "glyphs/玉-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:3253)",
-        "bytes": 1488
+        "bytes": 1488,
+        "srcPath": "oracle.php?code=F355",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=F355"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/玉-jinwen-1.jpg",
         "provenance": "亞□且丁[商代](CHANT:3940)",
-        "bytes": 2754
+        "bytes": 2754,
+        "srcPath": "bronze.php?id=40911",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=40911"
       },
       {
         "imageSrc": "glyphs/玉-jinwen-2.jpg",
         "provenance": "鮮盤（）[西周中期](CHANT:10166)",
-        "bytes": 2403
+        "bytes": 2403,
+        "srcPath": "bronze.php?id=98863",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=98863"
       },
       {
         "imageSrc": "glyphs/玉-jinwen-3.jpg",
         "provenance": "洹子孟姜壺[春秋](CHANT:9730)",
-        "bytes": 2674
+        "bytes": 2674,
+        "srcPath": "bronze.php?id=93307",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=93307"
       }
     ],
     "zhanguo": [],
@@ -768,7 +982,9 @@
       {
         "imageSrc": "glyphs/玉-zhanguo_qin-1.jpg",
         "provenance": "睡虎地秦簡．法律答問．140",
-        "bytes": 1997
+        "bytes": 1997,
+        "srcPath": "silk.php?hash=0010f85d4aa9628a5bc28969a5151afc",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=0010f85d4aa9628a5bc28969a5151afc"
       }
     ],
     "zhuanwen": [],
@@ -776,14 +992,18 @@
       {
         "imageSrc": "glyphs/玉-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1560
+        "bytes": 1560,
+        "srcPath": "kangxiArchaic.php?hash=f18fad01a2cd2b96163cbaddc4c7b329",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=f18fad01a2cd2b96163cbaddc4c7b329"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/玉-lishu-1.jpg",
         "provenance": "馬王堆．老子甲本．75",
-        "bytes": 1726
+        "bytes": 1726,
+        "srcPath": "silk.php?hash=b5d855838973cbf41fbf6027590c7568",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=b5d855838973cbf41fbf6027590c7568"
       }
     ]
   },
@@ -792,24 +1012,32 @@
       {
         "imageSrc": "glyphs/文-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:3236)",
-        "bytes": 1773
+        "bytes": 1773,
+        "srcPath": "oracle.php?code=F33B",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=F33B"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/文-jinwen-1.jpg",
         "provenance": "暊父丁文卣[商代](CHANT:5155)",
-        "bytes": 2444
+        "bytes": 2444,
+        "srcPath": "bronze.php?id=72955",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=72955"
       },
       {
         "imageSrc": "glyphs/文-jinwen-2.jpg",
         "provenance": "文鼎[商代或西周早期](CHANT:1015)",
-        "bytes": 2719
+        "bytes": 2719,
+        "srcPath": "bronze.php?id=17188",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17188"
       },
       {
         "imageSrc": "glyphs/文-jinwen-3.jpg",
         "provenance": "秦公鐘 [春秋早期](CHANT:262)",
-        "bytes": 1748
+        "bytes": 1748,
+        "srcPath": "bronze.php?id=8650",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=8650"
       }
     ],
     "zhanguo": [],
@@ -820,7 +1048,9 @@
       {
         "imageSrc": "glyphs/文-lishu-1.jpg",
         "provenance": "馬王堆．十問．74",
-        "bytes": 1410
+        "bytes": 1410,
+        "srcPath": "silk.php?hash=9716aeba888d310bedae7241b1c2d980",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=9716aeba888d310bedae7241b1c2d980"
       }
     ]
   },
@@ -829,31 +1059,41 @@
       {
         "imageSrc": "glyphs/目-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:0601)",
-        "bytes": 1869
+        "bytes": 1869,
+        "srcPath": "oracle.php?code=E306",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E306"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/目-jinwen-1.jpg",
         "provenance": "目子爵[商代](CHANT:8762)",
-        "bytes": 2065
+        "bytes": 2065,
+        "srcPath": "bronze.php?id=86467",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=86467"
       },
       {
         "imageSrc": "glyphs/目-jinwen-2.jpg",
         "provenance": "目爵[商代或西周早期](CHANT:7493)",
-        "bytes": 2531
+        "bytes": 2531,
+        "srcPath": "bronze.php?id=84402",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=84402"
       },
       {
         "imageSrc": "glyphs/目-jinwen-3.jpg",
         "provenance": "楚屈子赤角簠蓋[春秋晚期](CHANT:4612)",
-        "bytes": 2860
+        "bytes": 2860,
+        "srcPath": "bronze.php?id=69879",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=69879"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/目-zhanguo-1.jpg",
         "provenance": "廿年寺工矛[戰國晚期](CHANT:11548)",
-        "bytes": 1711
+        "bytes": 1711,
+        "srcPath": "bronze.php?id=107634",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=107634"
       }
     ],
     "zhuanwen": [],
@@ -861,14 +1101,18 @@
       {
         "imageSrc": "glyphs/目-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1714
+        "bytes": 1714,
+        "srcPath": "kangxiArchaic.php?hash=082d88d6283bc48b339413a94f323c7a",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=082d88d6283bc48b339413a94f323c7a"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/目-lishu-1.jpg",
         "provenance": "馬王堆．足臂十一脈灸經．6",
-        "bytes": 1952
+        "bytes": 1952,
+        "srcPath": "silk.php?hash=df53eeae293aba82636107cf7811f36b",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=df53eeae293aba82636107cf7811f36b"
       }
     ]
   },
@@ -877,19 +1121,25 @@
       {
         "imageSrc": "glyphs/耳-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:0680)",
-        "bytes": 1679
+        "bytes": 1679,
+        "srcPath": "oracle.php?code=E378",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E378"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/耳-jinwen-1.jpg",
         "provenance": "耳父乙鼎[商代](CHANT:2002)",
-        "bytes": 2398
+        "bytes": 2398,
+        "srcPath": "bronze.php?id=19090",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=19090"
       },
       {
         "imageSrc": "glyphs/耳-jinwen-2.jpg",
         "provenance": "亞耳且丁尊[西周早期](CHANT:5865)",
-        "bytes": 2103
+        "bytes": 2103,
+        "srcPath": "bronze.php?id=79019",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=79019"
       }
     ],
     "zhanguo": [],
@@ -897,7 +1147,9 @@
       {
         "imageSrc": "glyphs/耳-zhanguo_qin-1.jpg",
         "provenance": "睡虎地秦簡．效律．44",
-        "bytes": 1951
+        "bytes": 1951,
+        "srcPath": "silk.php?hash=1dbddc8cdf345fdd3f23602ba6a9b465",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=1dbddc8cdf345fdd3f23602ba6a9b465"
       }
     ],
     "zhuanwen": [],
@@ -905,14 +1157,18 @@
       {
         "imageSrc": "glyphs/耳-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1427
+        "bytes": 1427,
+        "srcPath": "kangxiArchaic.php?hash=e0940794e94434ccd24a9179fb900e2f",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=e0940794e94434ccd24a9179fb900e2f"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/耳-lishu-1.jpg",
         "provenance": "馬王堆．足臂十一脈灸經．6",
-        "bytes": 1702
+        "bytes": 1702,
+        "srcPath": "silk.php?hash=430ebb1d371d0bd3921de98da70f3b47",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=430ebb1d371d0bd3921de98da70f3b47"
       }
     ]
   },
@@ -921,19 +1177,25 @@
       {
         "imageSrc": "glyphs/口-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:0717)",
-        "bytes": 1606
+        "bytes": 1606,
+        "srcPath": "oracle.php?code=E3AB",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E3AB"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/口-jinwen-1.jpg",
         "provenance": "口尊[商代](CHANT:5452)",
-        "bytes": 2767
+        "bytes": 2767,
+        "srcPath": "bronze.php?id=77974",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=77974"
       },
       {
         "imageSrc": "glyphs/口-jinwen-2.jpg",
         "provenance": "萬口鼎[商代或西周早期](CHANT:1133)",
-        "bytes": 2417
+        "bytes": 2417,
+        "srcPath": "bronze.php?id=17255",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17255"
       }
     ],
     "zhanguo": [],
@@ -941,7 +1203,9 @@
       {
         "imageSrc": "glyphs/口-zhanguo_qin-1.jpg",
         "provenance": "睡虎地秦簡．語書．11",
-        "bytes": 1891
+        "bytes": 1891,
+        "srcPath": "silk.php?hash=bf2bf529ed834d903779deb8a9ed3791",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=bf2bf529ed834d903779deb8a9ed3791"
       }
     ],
     "zhuanwen": [],
@@ -949,14 +1213,18 @@
       {
         "imageSrc": "glyphs/口-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1491
+        "bytes": 1491,
+        "srcPath": "kangxiArchaic.php?hash=f1c1d59ce9c12a29de0cfaa0cdbeb3f0",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=f1c1d59ce9c12a29de0cfaa0cdbeb3f0"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/口-lishu-1.jpg",
         "provenance": "馬王堆．足臂十一脈灸經．10",
-        "bytes": 1747
+        "bytes": 1747,
+        "srcPath": "silk.php?hash=b83fa65d99bc3bbb179803bc40af7203",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=b83fa65d99bc3bbb179803bc40af7203"
       }
     ]
   },
@@ -965,26 +1233,34 @@
       {
         "imageSrc": "glyphs/心-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1934)",
-        "bytes": 2165
+        "bytes": 2165,
+        "srcPath": "oracle.php?code=EA94",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=EA94"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/心-jinwen-1.jpg",
         "provenance": "史牆盤[西周中期](CHANT:10175)",
-        "bytes": 2137
+        "bytes": 2137,
+        "srcPath": "bronze.php?id=99548",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=99548"
       },
       {
         "imageSrc": "glyphs/心-jinwen-2.jpg",
         "provenance": "王孫遺者鐘[春秋晚期](CHANT:261)",
-        "bytes": 2300
+        "bytes": 2300,
+        "srcPath": "bronze.php?id=8552",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=8552"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/心-zhanguo-1.jpg",
         "provenance": "中山王方壺[戰國早期](CHANT:9735)",
-        "bytes": 2822
+        "bytes": 2822,
+        "srcPath": "bronze.php?id=94316",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=94316"
       }
     ],
     "zhuanwen": [],
@@ -992,14 +1268,18 @@
       {
         "imageSrc": "glyphs/心-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1484
+        "bytes": 1484,
+        "srcPath": "kangxiArchaic.php?hash=d0c25154d8e94b061becf7c4ec70d19a",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=d0c25154d8e94b061becf7c4ec70d19a"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/心-lishu-1.jpg",
         "provenance": "馬王堆．養生方．144",
-        "bytes": 1794
+        "bytes": 1794,
+        "srcPath": "silk.php?hash=1622807cfc4aaf964b63ee397e39eb28",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=1622807cfc4aaf964b63ee397e39eb28"
       }
     ]
   },
@@ -1008,31 +1288,41 @@
       {
         "imageSrc": "glyphs/大-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:0197)",
-        "bytes": 1683
+        "bytes": 1683,
+        "srcPath": "oracle.php?code=E0E3",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E0E3"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/大-jinwen-1.jpg",
         "provenance": "大丏[商代](CHANT:3457)",
-        "bytes": 2070
+        "bytes": 2070,
+        "srcPath": "bronze.php?id=36226",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=36226"
       },
       {
         "imageSrc": "glyphs/大-jinwen-2.jpg",
         "provenance": "大盂鼎[西周早期](CHANT:2837)",
-        "bytes": 1978
+        "bytes": 1978,
+        "srcPath": "bronze.php?id=33422",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=33422"
       },
       {
         "imageSrc": "glyphs/大-jinwen-3.jpg",
         "provenance": "蔡缶[春秋晚期](CHANT:10004)",
-        "bytes": 1431
+        "bytes": 1431,
+        "srcPath": "bronze.php?id=97100",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=97100"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/大-zhanguo-1.jpg",
         "provenance": "噩君舟節[戰國](CHANT:12113)",
-        "bytes": 1664
+        "bytes": 1664,
+        "srcPath": "bronze.php?id=111193",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=111193"
       }
     ],
     "zhuanwen": [],
@@ -1040,14 +1330,18 @@
       {
         "imageSrc": "glyphs/大-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1733
+        "bytes": 1733,
+        "srcPath": "kangxiArchaic.php?hash=7d3c0b6243bcff1b88cf2390c0dfebec",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=7d3c0b6243bcff1b88cf2390c0dfebec"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/大-lishu-1.jpg",
         "provenance": "睡虎地秦簡．秦律十八種．129",
-        "bytes": 1976
+        "bytes": 1976,
+        "srcPath": "silk.php?hash=5a57990aae3f55b5d9d225ece26e4a01",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=5a57990aae3f55b5d9d225ece26e4a01"
       }
     ]
   },
@@ -1056,26 +1350,34 @@
       {
         "imageSrc": "glyphs/王-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:3246)",
-        "bytes": 1714
+        "bytes": 1714,
+        "srcPath": "oracle.php?code=F34D",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=F34D"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/王-jinwen-1.jpg",
         "provenance": "宰角[商代](CHANT:9105)",
-        "bytes": 1974
+        "bytes": 1974,
+        "srcPath": "bronze.php?id=87769",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=87769"
       },
       {
         "imageSrc": "glyphs/王-jinwen-2.jpg",
         "provenance": "子黃尊[商代或西周早期](CHANT:6000)",
-        "bytes": 2307
+        "bytes": 2307,
+        "srcPath": "bronze.php?id=80359",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=80359"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/王-zhanguo-1.jpg",
         "provenance": "王三年馬雍令戈[戰國](CHANT:11375)",
-        "bytes": 1582
+        "bytes": 1582,
+        "srcPath": "bronze.php?id=106628",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=106628"
       }
     ],
     "zhuanwen": [],
@@ -1083,14 +1385,18 @@
       {
         "imageSrc": "glyphs/王-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1446
+        "bytes": 1446,
+        "srcPath": "kangxiArchaic.php?hash=232a828d7dacac98726ab9d143225951",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=232a828d7dacac98726ab9d143225951"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/王-lishu-1.jpg",
         "provenance": "馬王堆．老子甲本．144",
-        "bytes": 1840
+        "bytes": 1840,
+        "srcPath": "silk.php?hash=d1bebe07246fe5984ecf54d1e73e19be",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=d1bebe07246fe5984ecf54d1e73e19be"
       }
     ]
   },
@@ -1099,26 +1405,34 @@
       {
         "imageSrc": "glyphs/車-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:3145)",
-        "bytes": 2192
+        "bytes": 2192,
+        "srcPath": "oracle.php?code=F275",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=F275"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/車-jinwen-1.jpg",
         "provenance": "車戈[商代](CHANT:10866)",
-        "bytes": 3106
+        "bytes": 3106,
+        "srcPath": "bronze.php?id=103960",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=103960"
       },
       {
         "imageSrc": "glyphs/車-jinwen-2.jpg",
         "provenance": "方鼎[西周早期](CHANT:2612)",
-        "bytes": 3085
+        "bytes": 3085,
+        "srcPath": "bronze.php?id=23925",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=23925"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/車-zhanguo-1.jpg",
         "provenance": "噩君車節[戰國](CHANT:12110)",
-        "bytes": 1949
+        "bytes": 1949,
+        "srcPath": "bronze.php?id=110844",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=110844"
       }
     ],
     "zhuanwen": [],
@@ -1126,14 +1440,18 @@
       {
         "imageSrc": "glyphs/車-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1502
+        "bytes": 1502,
+        "srcPath": "kangxiArchaic.php?hash=80ee20fd3b8d87aeb4e255ce2e153e67",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=80ee20fd3b8d87aeb4e255ce2e153e67"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/車-lishu-1.jpg",
         "provenance": "馬王堆．五十二病方．403",
-        "bytes": 1667
+        "bytes": 1667,
+        "srcPath": "silk.php?hash=79eb9d4b9d14d6493efd216d136d4e90",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=79eb9d4b9d14d6493efd216d136d4e90"
       }
     ]
   },
@@ -1142,26 +1460,34 @@
       {
         "imageSrc": "glyphs/石-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:2251)",
-        "bytes": 1389
+        "bytes": 1389,
+        "srcPath": "oracle.php?code=ECA4",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=ECA4"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/石-jinwen-1.jpg",
         "provenance": "己貉子蓋[西周中期](CHANT:3977)",
-        "bytes": 2467
+        "bytes": 2467,
+        "srcPath": "bronze.php?id=41624",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=41624"
       },
       {
         "imageSrc": "glyphs/石-jinwen-2.jpg",
         "provenance": "鐘白侵鼎[春秋](CHANT:2668)",
-        "bytes": 2946
+        "bytes": 2946,
+        "srcPath": "bronze.php?id=25013",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=25013"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/石-zhanguo-1.jpg",
         "provenance": "高奴禾石權[戰國](CHANT:10384)",
-        "bytes": 2975
+        "bytes": 2975,
+        "srcPath": "bronze.php?id=103020",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=103020"
       }
     ],
     "zhuanwen": [],
@@ -1169,14 +1495,18 @@
       {
         "imageSrc": "glyphs/石-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1572
+        "bytes": 1572,
+        "srcPath": "kangxiArchaic.php?hash=2a181585d8a6d1546348bd5fd38006ea",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=2a181585d8a6d1546348bd5fd38006ea"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/石-lishu-1.jpg",
         "provenance": "馬王堆．老子乙本卷前古佚書．43",
-        "bytes": 1606
+        "bytes": 1606,
+        "srcPath": "silk.php?hash=a51dae4bd61a6e2b32d13e3b38bcd537",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=a51dae4bd61a6e2b32d13e3b38bcd537"
       }
     ]
   },
@@ -1185,26 +1515,34 @@
       {
         "imageSrc": "glyphs/羊-jiaguwen-1.jpg",
         "provenance": "甲骨文合集(CHANT:1270)",
-        "bytes": 1826
+        "bytes": 1826,
+        "srcPath": "oracle.php?code=E339",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oracle.php?code=E339"
       }
     ],
     "jinwen": [
       {
         "imageSrc": "glyphs/羊-jinwen-1.jpg",
         "provenance": "羊鼎[商代](CHANT:1463)",
-        "bytes": 2522
+        "bytes": 2522,
+        "srcPath": "bronze.php?id=17643",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17643"
       },
       {
         "imageSrc": "glyphs/羊-jinwen-2.jpg",
         "provenance": "羊父庚鼎[商代或西周早期](CHANT:1627)",
-        "bytes": 2218
+        "bytes": 2218,
+        "srcPath": "bronze.php?id=17994",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=17994"
       }
     ],
     "zhanguo": [
       {
         "imageSrc": "glyphs/羊-zhanguo-1.jpg",
         "provenance": "噩君舟節[戰國](CHANT:12113)",
-        "bytes": 1766
+        "bytes": 1766,
+        "srcPath": "bronze.php?id=111273",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/bronze.php?id=111273"
       }
     ],
     "zhuanwen": [],
@@ -1212,14 +1550,18 @@
       {
         "imageSrc": "glyphs/羊-xiaozhuan-1.jpg",
         "provenance": "小篆(康熙圖)",
-        "bytes": 1541
+        "bytes": 1541,
+        "srcPath": "kangxiArchaic.php?hash=9d7ef58c1b1ca507cbbef2a7df491981",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/kangxiArchaic.php?hash=9d7ef58c1b1ca507cbbef2a7df491981"
       }
     ],
     "lishu": [
       {
         "imageSrc": "glyphs/羊-lishu-1.jpg",
         "provenance": "馬王堆．老子乙本卷前古佚書．134",
-        "bytes": 1668
+        "bytes": 1668,
+        "srcPath": "silk.php?hash=f8fc799c0efebc3467e20290d0fd6e15",
+        "srcUrl": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/silk.php?hash=f8fc799c0efebc3467e20290d0fd6e15"
       }
     ]
   }

@@ -9,7 +9,7 @@
 3. 不用示意图/字体渲染冒充实物
 """
 
-import json, os, html, re
+import json, os, html, re, urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..')
@@ -35,6 +35,13 @@ HKU_SOURCE_REF = {
 }
 
 KAISHU_PATH = os.path.join(ROOT, 'data', 'kaishu_glyphs.json')
+KAISHU_PAGES_PATH = os.path.join(ROOT, 'data', 'kaishu_pages.json')
+
+# 图像「出处页」（供点击图片跳转）。注意：
+# - 港中大字库的图片端点要求同站 Referer，直接在浏览器打开会得到 0 字节，
+#   故链接指向该字的字页（含分时代字形表与器物名）。
+# - 词典网（含其图床 c.cidianwang.com）https 证书已过期，故链接一律用 http。
+HKU_PAGE = 'https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/search.php?word='
 
 # 书法家 → 朝代（用于楷书断代；未列者留空）
 CALLIGRAPHER_DYNASTY = {
@@ -202,12 +209,14 @@ def build_hku_instance(era: str, char: str, entry: dict, n: int) -> str:
     parts.append("verification: 'verified'")
     parts.append("verifier: '香港中文大學《漢語多功能字庫》'")
     parts.append(f"imageSrc: '{esc(entry['imageSrc'])}'")
+    parts.append(f"sourceUrl: '{esc(HKU_PAGE + urllib.parse.quote(char))}'")
     if is_qin:
         parts.append("note: '戰國文字分秦系與六國古文兩系；簡文書寫年代多在戰國晚期，墓葬在秦始皇三十年（前217）。'")
     return '{ ' + ', '.join(parts) + ' }'
 
 
-def build_kaishu_instance(char: str, entry: dict, n: int) -> str:
+def build_kaishu_instance(char: str, entry: dict, n: int,
+                          page_url: str | None = None) -> str:
     """由「词典网·书法字典」一条楷书字形记录生成 GlyphInstance（含真图 + 碑帖/书家）。"""
     calligrapher = entry.get('calligrapher', '')
     work = entry.get('work', '')
@@ -228,11 +237,15 @@ def build_kaishu_instance(char: str, entry: dict, n: int) -> str:
     parts.append("verification: 'verified'")
     parts.append("verifier: '词典网·书法字典（据历代碑帖）'")
     parts.append(f"imageSrc: '{esc(entry['imageSrc'])}'")
+    if page_url:
+        # 图床 https 证书已过期 → 一律 http，避免浏览器弹出证书警告
+        parts.append(f"sourceUrl: '{esc(page_url.replace('https://', 'http://'))}'")
     return '{ ' + ', '.join(parts) + ' }'
 
 
 def build_instance(era: str, char: str, prov: dict, shuowen: dict | None,
-                   fallback_img: str | None = None) -> str:
+                   fallback_img: str | None = None,
+                   fallback_url: str | None = None) -> str:
     """生成一条 GlyphInstance 对象字面量。"""
     parts = [f"id: '{esc(char)}-{era}-1'"]
 
@@ -255,7 +268,14 @@ def build_instance(era: str, char: str, prov: dict, shuowen: dict | None,
         img = seal or fallback_img
         if img:
             parts.append(f"imageSrc: '{img}'")
-            if not seal:
+            if seal:
+                # 篆书图来自维基共享资源 → 链接到该文件的说明页
+                fname = seal.split('/', 1)[1]
+                parts.append(
+                    f"sourceUrl: '{esc('https://commons.wikimedia.org/wiki/File:' + fname)}'")
+            else:
+                if fallback_url:
+                    parts.append(f"sourceUrl: '{esc(fallback_url)}'")
                 parts.append("note: '小篆圖據《康熙字典》字形庫（說文小篆）'")
     else:
         parts.append(f"era: '{era}'")
@@ -295,6 +315,11 @@ def generate() -> str:
         with open(KAISHU_PATH, 'r', encoding='utf-8') as f:
             kaishu = json.load(f)
 
+    kaishu_pages = {}
+    if os.path.exists(KAISHU_PAGES_PATH):
+        with open(KAISHU_PAGES_PATH, 'r', encoding='utf-8') as f:
+            kaishu_pages = json.load(f)
+
     out = []
     out.append('/**')
     out.append(' * 汉字字形演变证据链数据')
@@ -330,10 +355,13 @@ def generate() -> str:
                 # 說文数据存在 → 强制生成 verified 小篆条目（覆盖 provenance 空缺）
                 xz_hku = char_hku.get('xiaozhuan', [])
                 fb = xz_hku[0]['imageSrc'] if xz_hku else None
-                inst = build_instance('xiaozhuan', char, {}, shuowen, fb)
+                fb_url = xz_hku[0].get('srcUrl') if xz_hku else None
+                inst = build_instance('xiaozhuan', char, {}, shuowen, fb, fb_url)
                 entries.append(f"{{ era: 'xiaozhuan', instances: [{inst}], isGap: false }}")
             elif era == 'kaishu' and char_kaishu:
-                insts = [build_kaishu_instance(char, e, i + 1) for i, e in enumerate(char_kaishu)]
+                page = kaishu_pages.get(char)
+                insts = [build_kaishu_instance(char, e, i + 1, page)
+                         for i, e in enumerate(char_kaishu)]
                 entries.append(f"{{ era: 'kaishu', instances: [{', '.join(insts)}], isGap: false }}")
             elif hku_entries:
                 # 有《漢語多功能字庫》真图与出处 → 一或多件实例（已核对）

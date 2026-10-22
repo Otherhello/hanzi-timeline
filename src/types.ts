@@ -31,6 +31,13 @@ export interface GlyphInstance {
    * 留空表示「实物图像尚未接入」，渲染层会显示显式的待接占位，绝不伪造字形。
    */
   imageSrc?: string
+  /**
+   * 该实物图像的**原始出处页**（点击图片时跳转）。
+   * 例如：港中大《漢語多功能字庫》的 oracle.php?code=… / bronze.php?id=…、
+   * 维基共享资源的 File: 页、词典网的碑帖原图页。
+   * 留空表示没有可跳转的来源页，渲染层不生成链接。
+   */
+  sourceUrl?: string
   /** 实物名称——哪片甲骨/哪件青铜器/哪块碑/哪件写本 */
   artifact: string
   /** 著录编号或器物编号，如《甲骨文合集》合 xxxx、出土坑位等 */

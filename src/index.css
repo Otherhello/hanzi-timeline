@@ -443,6 +443,54 @@ input {
   filter: contrast(0.98);
 }
 
+/* 可点击的字形图 —— 跳转到图像原始出处页 */
+.glyph-link {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  max-width: 100%;
+  border-radius: 2px;
+  text-decoration: none;
+  outline-offset: 6px;
+  cursor: zoom-in;
+}
+.glyph-link img {
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+.glyph-link:hover img {
+  filter: contrast(1.03) brightness(1.02);
+  transform: scale(1.02);
+}
+.glyph-link-hint {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  padding: 2px 7px 3px;
+  font-family: var(--font-serif);
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  color: var(--paper);
+  background: rgba(35, 32, 26, 0.68);
+  border-radius: 2px;
+  opacity: 0;
+  transform: translateY(3px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  pointer-events: none;
+}
+.glyph-link:hover .glyph-link-hint,
+.glyph-link:focus-visible .glyph-link-hint {
+  opacity: 1;
+  transform: none;
+}
+/* 触屏没有 hover，提示常驻 */
+@media (hover: none) {
+  .glyph-link-hint {
+    opacity: 0.9;
+    transform: none;
+  }
+}
+
 /* 实物空帧占位：绝不伪造字形 */
 .glyph-ph {
   display: flex;

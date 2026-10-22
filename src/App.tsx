@@ -53,6 +53,7 @@ export default function App() {
           <li><b>核对状态</b>：<span className="badge badge--verified"><span className="badge-dot" />已核对</span> 印章红示已核对——甲骨／金文／战国／隶出自香港中文大学《漢語多功能字庫》（附《合集》《集成》器号），小篆出自维基文库《說文解字》，楷书出自历代碑帖（附碑帖名与书家）；<span className="badge badge--pending"><span className="badge-dot" />待核对</span> 淡墨灰示出处已标明、尚未逐件核验。</li>
           <li><b>缺环</b>：某时代无可信实例时，以「缺」空白帧说明，绝不倒填后世字形、不用示意图冒充实物。</li>
           <li><b>影像依据</b>：各期字形图取自可溯源的学术字形库与书法字典，每图对应具体甲骨／青铜器／简帛／碑帖／字书，非凭空杜撰。</li>
+          <li><b>点击图片</b>：图中字形均可点击，在新标签页打开其来源页——港中大《漢語多功能字庫》该字页、词典网该字字页，或维基共享资源该文件页。</li>
         </ul>
       </div>
     </div>
