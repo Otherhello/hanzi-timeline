@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import type { CharacterData } from './types'
 import { realSource, SUGGESTED } from './sources/realSource'
 import Header from './components/Header'
+import Backdrop from './components/Backdrop'
 import SearchBar from './components/SearchBar'
 import Timeline from './components/Timeline'
 
@@ -33,6 +34,7 @@ export default function App() {
 
   return (
     <div className="app">
+      <Backdrop />
       <Header />
       <SearchBar onQuery={query} suggestions={SUGGESTIONS} />
 

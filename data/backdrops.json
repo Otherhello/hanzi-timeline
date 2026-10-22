@@ -1,0 +1,98 @@
+{
+ "lanting": {
+  "key": "lanting",
+  "name": "蘭亭集序（馮承素摹本）",
+  "artist": "王羲之",
+  "period": "東晉",
+  "script": "行書",
+  "file": "backdrops/lanting.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Lantingji_Xu_蘭亭序_(cropped).png",
+  "title": "File:Lantingji Xu 蘭亭序 (cropped).png",
+  "size": "1400x777",
+  "kb": 100.2
+ },
+ "jizhiwengao": {
+  "key": "jizhiwengao",
+  "name": "祭姪文稿",
+  "artist": "顏真卿",
+  "period": "唐",
+  "script": "行書",
+  "file": "backdrops/jizhiwengao.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:唐顏真卿祭姪文稿_卷.png",
+  "title": "File:唐顏真卿祭姪文稿 卷.png",
+  "size": "1400x880",
+  "kb": 206.6
+ },
+ "zixutie": {
+  "key": "zixutie",
+  "name": "自敘帖",
+  "artist": "懷素",
+  "period": "唐",
+  "script": "草書",
+  "file": "backdrops/zixutie.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:唐懷素自敘帖_卷.png",
+  "title": "File:唐懷素自敘帖 卷.png",
+  "size": "1400x880",
+  "kb": 217.5
+ },
+ "jiuchenggong": {
+  "key": "jiuchenggong",
+  "name": "九成宮醴泉銘",
+  "artist": "歐陽詢",
+  "period": "唐",
+  "script": "楷書",
+  "file": "backdrops/jiuchenggong.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:宋拓九成宫醴泉铭册_7.jpg",
+  "title": "File:宋拓九成宫醴泉铭册 7.jpg",
+  "size": "1400x1197",
+  "kb": 210.3
+ },
+ "duobaota": {
+  "key": "duobaota",
+  "name": "多寶塔碑",
+  "artist": "顏真卿",
+  "period": "唐",
+  "script": "楷書",
+  "file": "backdrops/duobaota.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:多宝塔碑.唐.颜真卿.书.清中晚期拓片.东京国立博物馆藏.jpg",
+  "title": "File:多宝塔碑.唐.颜真卿.书.清中晚期拓片.东京国立博物馆藏.jpg",
+  "size": "573x1400",
+  "kb": 253.7
+ },
+ "caoquanbei": {
+  "key": "caoquanbei",
+  "name": "曹全碑",
+  "artist": "佚名",
+  "period": "東漢",
+  "script": "隸書",
+  "file": "backdrops/caoquanbei.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:曹全碑.jpg",
+  "title": "File:曹全碑.jpg",
+  "size": "668x1400",
+  "kb": 244.7
+ },
+ "shusutie": {
+  "key": "shusutie",
+  "name": "蜀素帖",
+  "artist": "米芾",
+  "period": "北宋",
+  "script": "行書",
+  "file": "backdrops/shusutie.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:宋米芾蜀素帖_卷.png",
+  "title": "File:宋米芾蜀素帖 卷.png",
+  "size": "1400x880",
+  "kb": 201.2
+ },
+ "shimensong": {
+  "key": "shimensong",
+  "name": "石門頌",
+  "artist": "佚名",
+  "period": "東漢",
+  "script": "隸書",
+  "file": "backdrops/shimensong.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:〈司隸校尉楗為楊君頌〉拓本.jpg",
+  "title": "File:〈司隸校尉楗為楊君頌〉拓本.jpg",
+  "size": "1400x1400",
+  "kb": 456.7
+ }
+}

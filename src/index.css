@@ -70,6 +70,91 @@ body {
 h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 500; margin: 0; }
 p { margin: 0; }
 
+/* ==========================================================================
+   纸背 —— 历代名帖虚化衬底（每次进入随机一幅）
+   模糊半径取大值，只留墨色浓淡与行气，不参与阅读；
+   罩层用宣纸色压到正文对比度不受影响。
+   ========================================================================== */
+
+.backdrop {
+  position: fixed;
+  inset: -10vmax;
+  z-index: -2;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(26px) saturate(0.45) contrast(0.9) brightness(1.04);
+  opacity: 0;
+  transition: opacity 1.8s ease;
+  pointer-events: none;
+  will-change: opacity;
+}
+.backdrop.is-ready { opacity: 0.56; }
+
+.backdrop-veil {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 85% at 50% 0%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 58%),
+    linear-gradient(180deg,
+      rgba(246, 241, 230, 0.72) 0%,
+      rgba(246, 241, 230, 0.62) 45%,
+      rgba(246, 241, 230, 0.54) 100%);
+}
+/* 纸纹压在罩层之上，保住手工纸的经纬感 */
+.backdrop-veil::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--paper-vein) 1px, transparent 1px),
+    linear-gradient(90deg, var(--paper-vein) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.7;
+}
+
+/* 右下角题识：极淡，可点进原件页 */
+.backdrop-caption {
+  position: fixed;
+  right: clamp(14px, 3vw, 34px);
+  bottom: clamp(12px, 2.4vw, 26px);
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  text-decoration: none;
+  color: var(--ink-faint);
+  opacity: 0;
+  transition: opacity 1.2s ease 0.4s, color 0.2s ease;
+  writing-mode: horizontal-tb;
+}
+.backdrop-caption.is-ready { opacity: 0.55; }
+.backdrop-caption:hover { opacity: 0.95; color: var(--ink-soft); }
+.backdrop-caption .bc-name {
+  font-family: var(--font-kai);
+  font-size: 13px;
+  letter-spacing: 0.14em;
+}
+.backdrop-caption .bc-meta {
+  font-family: var(--font-serif);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+}
+
+@media (max-width: 640px) {
+  .backdrop { filter: blur(18px) saturate(0.45) contrast(0.9) brightness(1.04); }
+  .backdrop.is-ready { opacity: 0.46; }
+  .backdrop-caption { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backdrop, .backdrop-caption { transition: none; }
+}
+
 button {
   font-family: inherit;
   cursor: pointer;
